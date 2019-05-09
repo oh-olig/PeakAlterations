@@ -1,0 +1,127 @@
+/*//////////////////////////////////////////////////////////
+// N A V B A R
+//////////////////////////////////////////////////////////*/
+
+.navbar { z-index: 9999; }
+.navbar-default { background-color: #050028; border-color: #9c640c; }
+a.navbar-brand { padding: 10px 10px; }
+a.navbar-brand img { height: 100%; }
+.navbar-default .navbar-nav > li > a { font-family: 'montserratmedium', Verdana, serif; color: #9c640c; }
+
+/* Navbar Links */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { color: #9c640c; background-color: #38335B; }
+
+/* Navbar Links - Mobile Version */
+.navbar-default .navbar-toggle { border-color: #9c640c; }
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus { color: #9c640c; background-color: #38335B; }
+
+/*//////////////////////////////////////////////////////////
+// I M A G E S
+//////////////////////////////////////////////////////////*/
+
+img#shopfront {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Row of Images */
+.row-of-img {
+    display: flex;
+}
+.row-of-img > div:not(:last-child) {
+    margin-right: 2%;
+  }
+.img1 { flex: 1; }
+.img2 { flex: 0.768; }
+.img3 { flex: 0.8; }
+.scaled-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*//////////////////////////////////////////////////////////
+// L A Y O U T
+//////////////////////////////////////////////////////////*/
+
+section {
+    background-color: #38335B;
+    padding-top: 65px;
+    height: 115vh;
+    position: relative;
+    z-index: 8;
+}
+section h2:first-child { margin-top: 0; }
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #050028;
+}
+.jumbotron h2 { 
+    font-family: 'montserratmedium', Verdana, serif;
+    font-style: bold;
+    color: #9c640c;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.jumbotron p {
+    font-family: 'montserratsemibold', Verdana, serif;
+    font-style: italic;
+    color: #9c640c;
+    text-align: center;
+}
+
+/* Jawg Map */
+.jawg-container {
+    position: relative;
+    padding-bottom: 30%;
+    height: 0;
+    overflow: hidden;
+}
+.jawg-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer { background-color: #050028; padding: 75px 0; }
+footer .col-xs-4 { text-align: center; }
+footer svg { height: 300px; max-width: 100%; }
+footer h3 { 
+    font-family: 'montserratmedium', Verdana, serif;
+    font-size: 20px;
+    text-align: center;
+    color: #693100;
+    padding-bottom: 25px;
+}
+
+/*//////////////////////////////////////////////////////////
+// F O N T S
+//////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('../css/fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../css/fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../css/fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../css/fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
