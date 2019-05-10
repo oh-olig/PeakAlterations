@@ -4,11 +4,18 @@
 
 .navbar { z-index: 9999; }
 .navbar-default { background-color: #050028; border-color: #9c640c; }
-a.navbar-brand { padding: 10px 10px; }
-a.navbar-brand img { height: 100%; }
-.navbar-default .navbar-nav > li > a { font-family: 'montserratmedium', Verdana, serif; color: #9c640c; }
+
+/* Navbar Text */
+.navbar-default .navbar-brand {
+    font-family: 'kingthings_wroteregular', Verdana, serif;
+    color: #9c640c;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover { color: #38335B; background-color: transparent; }
 
 /* Navbar Links */
+.navbar-default .navbar-nav > li > a { font-family: 'montserratmedium', Verdana, serif; color: #9c640c; }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -32,19 +39,12 @@ img#shopfront {
 }
 
 /* Row of Images */
-.row-of-img {
-    display: flex;
-}
-.row-of-img > div:not(:last-child) {
-    margin-right: 2%;
-  }
+.row-of-img { display: flex;}
+.row-of-img > div:not(:last-child) { margin-right: 2%; }
 .img1 { flex: 1; }
 .img2 { flex: 0.768; }
 .img3 { flex: 0.8; }
-.scaled-img {
-    max-width: 100%;
-    height: auto;
-}
+.scaled-img { max-width: 100%; height: auto; }
 
 /*//////////////////////////////////////////////////////////
 // L A Y O U T
@@ -53,29 +53,49 @@ img#shopfront {
 section {
     background-color: #38335B;
     padding-top: 65px;
-    height: 115vh;
+    height: 140vh;
     position: relative;
     z-index: 8;
 }
 section h2:first-child { margin-top: 0; }
 
 /* Jumbotron */
-.jumbotron {
-    background-color: #050028;
-}
+.jumbotron { background-color: #050028; }
 .jumbotron h2 { 
-    font-family: 'montserratmedium', Verdana, serif;
+    font-family: 'kingthings_wroteregular', Verdana, serif;
     font-style: bold;
+    font-size: 2vw;
     color: #9c640c;
-    padding-bottom: 10px;
+    padding-bottom: 0.8%;
     text-align: center;
 }
 .jumbotron p {
     font-family: 'montserratsemibold', Verdana, serif;
-    font-style: italic;
+    font-size: 1vw;
     color: #9c640c;
     text-align: center;
 }
+
+/* About Section */
+.slogan p { font-style: italic !important; padding-bottom: 0.8%; }
+.about-standard-services p { font-style: normal; padding-top: 1.5%; }
+.about-special-services p { font-style: normal; }
+.opening-times p { 
+    font-family: 'kingthings_wroteregular', Verdana, serif !important;
+    font-size: 1.8vw;
+    padding-top: 0.8%;
+}
+.opening-times table {
+    font-family: 'montserratsemibold', Verdana, serif;
+    font-size: 1vw;
+    color: #9c640c;
+    margin-left: auto;
+    margin-right: auto;
+}
+.opening-times th { text-align: right; }
+
+/* Contact Us Section */
+
 
 /* Jawg Map */
 .jawg-container {
@@ -85,28 +105,38 @@ section h2:first-child { margin-top: 0; }
     overflow: hidden;
 }
 .jawg-container iframe {
+    pointer-events: none;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
 
 /* Footer */
-footer { background-color: #050028; padding: 75px 0; }
+footer { background-color: #050028; padding: 2% 0; }
 footer .col-xs-4 { text-align: center; }
-footer svg { height: 300px; max-width: 100%; }
+footer svg { height: auto; max-width: 50%; }
 footer h3 { 
     font-family: 'montserratmedium', Verdana, serif;
-    font-size: 20px;
+    font-size: 0.8vw;
     text-align: center;
     color: #693100;
-    padding-bottom: 25px;
+    padding-bottom: 1%;
 }
 
 /*//////////////////////////////////////////////////////////
 // F O N T S
 //////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'kingthings_wroteregular';
+    src: url('../css/fonts/kingthings_wrote-webfont.woff2') format('woff2'),
+         url('../css/fonts/kingthings_wrote-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'montserratsemibold';

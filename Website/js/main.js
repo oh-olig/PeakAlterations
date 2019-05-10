@@ -47,6 +47,20 @@ $(document).ready(function () {
                 history.pushState("", document.title, id);
             }
         }
-	});
+    });
+
+    ////////////////////////////////////////////////////////////
+    // J A W G   M A P
+    //////////////////////////////////////////////////////////// 
+    
+    // Allow map srcoll zoom after click
+    $('.jawg-container').click(function () {
+        $('.jawg-container iframe').css("pointer-events", "auto");
+    });
+    
+    // Prevent map scroll zoom
+    $( ".jawg-container" ).mouseleave(function() {
+      $('.jawg-container iframe').css("pointer-events", "none"); 
+    });
     
 });
