@@ -2,7 +2,7 @@
 // N A V B A R
 //////////////////////////////////////////////////////////*/
 
-.navbar { z-index: 9999; }
+.navbar { z-index: 9999; margin-top: 0 !important; }
 .navbar-default { background-color: #050028; border-color: #9c640c; }
 
 /* Navbar Text */
@@ -50,14 +50,16 @@ img#shopfront {
 // L A Y O U T
 //////////////////////////////////////////////////////////*/
 
-section {
+body{
     background-color: #38335B;
-    padding-top: 65px;
-    height: 140vh;
+}
+section {
+    display: inline;
     position: relative;
     z-index: 8;
 }
 section h2:first-child { margin-top: 0; }
+.container-fluid { margin-top: 65px; }
 
 /* Jumbotron */
 .jumbotron { background-color: #050028; }
@@ -70,7 +72,7 @@ section h2:first-child { margin-top: 0; }
     text-align: center;
 }
 .jumbotron p {
-    font-family: 'montserratsemibold', Verdana, serif;
+    font-family: 'montserratmedium', Verdana, serif;
     font-size: 1vw;
     color: #9c640c;
     text-align: center;
@@ -80,22 +82,93 @@ section h2:first-child { margin-top: 0; }
 .slogan p { font-style: italic !important; padding-bottom: 0.8%; }
 .about-standard-services p { font-style: normal; padding-top: 1.5%; }
 .about-special-services p { font-style: normal; }
-.opening-times p { 
+.opening-hours p { 
     font-family: 'kingthings_wroteregular', Verdana, serif !important;
     font-size: 1.8vw;
     padding-top: 0.8%;
 }
-.opening-times table {
+.opening-hours table {
     font-family: 'montserratsemibold', Verdana, serif;
     font-size: 1vw;
     color: #9c640c;
     margin-left: auto;
     margin-right: auto;
 }
-.opening-times th { text-align: right; }
+.opening-hours th { text-align: right; }
 
 /* Contact Us Section */
-
+.facebook-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook-link svg {
+    height: auto;
+    max-width: 0.9%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.facebook-link text {
+    font-family: 'montserratmedium', Verdana, serif;
+    font-style: italic;
+    font-size: 0.8vw;
+    color: #9c640c;
+    padding-left: 0.8%;
+}
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+}
+.email svg {
+    height: auto;
+    max-width: 1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.email text {
+    font-family: 'montserratmedium', Verdana, serif;
+    font-size: 0.8vw;
+    color: #9c640c;
+    padding-left: 0.8%;
+}
+.phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+}
+.phone svg {
+    height: auto;
+    max-width: 1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.phone text {
+    font-family: 'montserratmedium', Verdana, serif;
+    font-size: 0.8vw;
+    color: #9c640c;
+    padding-left: 0.8%;
+}
+.address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5%;
+}
+.address svg {
+    height: auto;
+    max-width: 1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.address text {
+    font-family: 'montserratmedium', Verdana, serif;
+    font-size: 0.8vw;
+    color: #9c640c;
+    padding-left: 0.8%;
+}
 
 /* Jawg Map */
 .jawg-container {
@@ -103,6 +176,7 @@ section h2:first-child { margin-top: 0; }
     padding-bottom: 30%;
     height: 0;
     overflow: hidden;
+    margin-bottom: 1.8%;
 }
 .jawg-container iframe {
     pointer-events: none;
@@ -114,9 +188,13 @@ section h2:first-child { margin-top: 0; }
 }
 
 /* Footer */
-footer { background-color: #050028; padding: 2% 0; }
+footer {
+    background-color: #050028;
+    padding: 2% 0;
+    margin-top: 0;
+}
 footer .col-xs-4 { text-align: center; }
-footer svg { height: auto; max-width: 50%; }
+footer img { height: auto; max-width: 50%; }
 footer h3 { 
     font-family: 'montserratmedium', Verdana, serif;
     font-size: 0.8vw;

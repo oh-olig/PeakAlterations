@@ -5,8 +5,8 @@ $(document).ready(function () {
     //////////////////////////////////////////////////////////// 
     
     // Footer Logos Tween
-    TweenMax.set($("footer svg"), {filter: "grayscale(100%)", autoAlpha: 0.2});
-    $("footer svg").on({
+    TweenMax.set($("footer img"), {filter: "grayscale(100%)", autoAlpha: 0.2});
+    $("footer img").on({
         mouseenter:function() {
             TweenMax.to($(this), 0.5, {filter: "none", autoAlpha: 1});
         }, mouseleave:function() {
@@ -60,7 +60,7 @@ $(document).ready(function () {
     
     // Prevent map scroll zoom
     $( ".jawg-container" ).mouseleave(function() {
-      $('.jawg-container iframe').css("pointer-events", "none"); 
+      $('.jawg-container iframe').css("pointer-events", "none");
     });
     
 });
