@@ -11,9 +11,9 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">   
 	<!-- Icons -->
-	<link rel="shortcut icon" href="res/logo_gold.png">
-	<link rel="bookmark" href="res/logo_gold.png">
-    <link rel="apple-touch-icon-precomposed" href="res/logo_gold.png">
+	<link rel="shortcut icon" href="res/logo/logo_gold.png">
+	<link rel="bookmark" href="res/logo/logo_gold.png">
+    <link rel="apple-touch-icon-precomposed" href="res/logo/logo_gold.png">
     <!-- CSS -->
     <link rel="stylesheet" href="res/inc/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="res/inc/leaflet/leaflet.css" />
@@ -56,7 +56,6 @@
     <a id="about"></a>
     <section id="slide-about">
         <div class="container-fluid">
-            <!-- Info -->
             <div class="jumbotron">
                 <h2>Welcome to Peak Alterations</h2>
                 <hr class="my-4">
@@ -101,57 +100,30 @@
     
     <!-- Contact Slide -->
     <a id="contact"></a>
-    <section id="slide-contact">
+    <section id="slide-contact" >
         <div class="container-fluid">
-            <!-- Info -->
-            <div class="jumbotron">
+            <div class="jumbotron" id="contact-info">
                 <h2>Contact Us</h2>
                 <hr class="my-4">
                 <!-- Facebook -->
-                <div class="facebook-link">
-                    <svg version="1.1" baseProfile="tiny" id="Layer_1" focusable="false"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 320 512"
-                        xml:space="preserve">
-                    <a href="http://en-gb.facebook.com/pg/peakalterations">
-                        <path fill="#AD7C00" d="M279.1,288l14.2-92.7h-88.9v-60.1c0-25.3,12.4-50.1,52.2-50.1h40.4V6.3c0,0-36.7-6.3-71.7-6.3
-                            c-73.2,0-121.1,44.4-121.1,124.7v70.6H22.9V288h81.4v224h100.2V288H279.1z"/>
-                    </a>
-                    </svg>
-                    <text> Follow me on Facebook</text>
+                <div>
+                    <img alt="Facebook-icon" src="res/icon/facebook-link_gold.svg" />
+                    <a href="https://www.facebook.com/peakalterations/"> Follow me on Facebook</a>
                 </div>
                 <!-- Email -->
-                <div class="email">
-                    <svg version="1.1" baseProfile="tiny" id="Layer_1" focusable="false"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        xml:space="preserve">
-                    <path fill="#AD7C00" d="M502.3,190.8c3.9-3.1,9.7-0.2,9.7,4.7V400c0,26.5-21.5,48-48,48H48c-26.5,0-48-21.5-48-48V195.6
-                        c0-5,5.7-7.8,9.7-4.7c22.4,17.4,52.1,39.5,154.1,113.6c21.1,15.4,56.7,47.8,92.2,47.6c35.7,0.3,72-32.8,92.3-47.6
-                        C450.3,230.4,479.9,208.2,502.3,190.8z M256,320c23.2,0.4,56.6-29.2,73.4-41.4c132.7-96.3,142.8-104.7,173.4-128.7
-                        c5.8-4.5,9.2-11.5,9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5,64,0,85.5,0,112v19c0,7.4,3.4,14.3,9.2,18.9
-                        c30.6,23.9,40.7,32.4,173.4,128.7C199.4,290.8,232.8,320.4,256,320L256,320z"/>
-                    </svg>
-                    <text> peakalterations@gmail.com</text>
+                <div>
+                    <img alt="Email-icon" src="res/icon/envelope_gold.svg" />
+                    <span> peakalterations@gmail.com</span>
                 </div>
                 <!-- Phone -->
-                <div class="phone">
-                    <svg version="1.1" baseProfile="tiny" id="Layer_1" focusable="false"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        xml:space="preserve">
-                    <path fill="#AD7C00" d="M493.4,24.6l-104-24c-11.3-2.6-22.9,3.3-27.5,13.9l-48,112c-4.2,9.8-1.4,21.3,6.9,28l60.6,49.6
-                        c-36,76.7-98.9,140.5-177.2,177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112,48c-10.7,4.7-16.6,16.3-14,27.6l24,104
-                        C27.1,504.2,36.7,512,48,512c256.1,0,464-207.5,464-464C512,36.8,504.3,27.1,493.4,24.6z"/>
-                    </svg>
-                    <text> 07572 973 641</text>
+                <div>
+                    <img alt="Phone-icon" src="res/icon/phone_gold.svg" />
+                    <span> 07572 973 641</span>
                 </div>
                 <!-- Address -->
-                <div class="address">
-                    <svg version="1.1" baseProfile="tiny" id="Layer_1" focusable="false"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 384 512"
-                        xml:space="preserve">
-                    <path fill="#AD7C00" d="M172.3,501.7C27,291,0,269.4,0,192C0,86,86,0,192,0s192,86,192,192c0,77.4-27,99-172.3,309.7
-                        C202.2,515.4,181.8,515.4,172.3,501.7L172.3,501.7z"/>
-                    </svg>
-                    <text> Peak Alterations, Bronhaul, Abbey Rd, Llangollen, LL20 8SN</text>
+                <div>
+                    <img alt="Address-icon" src="res/icon/map-marker_gold.svg" />
+                    <span> Peak Alterations, Bronhaul, Abbey Rd, Llangollen, LL20 8SN</span>
                 </div>
             </div>
             <!-- Jawg Map -->
@@ -171,7 +143,7 @@
             </div>
             <!-- Peak Alterations Logo -->
             <div class="col-xs-4">
-                <img src="res/logo/logo_footer.svg" />
+                <img alt="Footer-logo" src="res/logo/logo_footer.svg" />
             </div>
             <!-- Contact Details -->
             <div class="col-xs-4">
