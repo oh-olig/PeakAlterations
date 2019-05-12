@@ -5,7 +5,7 @@
 .navbar { z-index: 9999; margin-top: 0 !important; }
 .navbar-default { background-color: #050028; border-color: #9c640c; }
 
-/* Navbar Text */
+/* Navbar Brand */
 .navbar-default .navbar-brand {
     font-family: 'kingthings_wroteregular', Verdana, serif;
     color: #9c640c;
@@ -48,237 +48,146 @@ img#shopfront {
 .scaled-img { max-width: 100%; height: auto; }
 
 /*//////////////////////////////////////////////////////////
-// M O B I L E   B R O W S E R
+// L A Y O U T   C R O S S   P L A T F O R M
+//////////////////////////////////////////////////////////*/
+
+body{ background-color: #38335B; }
+section {
+    display: inline;
+    position: relative;
+    z-index: 8;
+}
+section h2:first-child { margin-top: 0; }
+.container-fluid { margin-top: 65px; }
+
+/* Jumbotron */
+.jumbotron { background-color: #050028; }
+.jumbotron h2 { 
+    font-family: 'kingthings_wroteregular', Verdana, serif;
+    font-style: bold;
+    color: #9c640c;
+    padding-bottom: 0.8%;
+    text-align: center;
+}
+.jumbotron p {
+    font-family: 'montserratmedium', Verdana, serif;
+    color: #9c640c;
+    text-align: center;
+}
+
+/* About Section */
+.slogan p { font-style: italic !important; padding-bottom: 0.8%; }
+.jumbotron#opening-hours table {
+    font-family: 'montserratsemibold', Verdana, serif;
+    color: #9c640c;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jumbotron#opening-hours th { text-align: right; }
+
+/* Contact Us Section */
+.jumbotron#contact-info div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron#contact-info img {
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.jumbotron#contact-info span {
+    font-family: 'montserratmedium', Verdana, serif;
+    color: #9c640c;
+}
+.jumbotron#contact-info a {
+    font-family: 'montserratmedium', Verdana, serif;
+    font-style: italic;
+    color: #9c640c;
+}
+.map-container {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1.8%;
+}
+.map-container iframe {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer */
+footer { background-color: #050028; margin-top: 0 !important; }
+footer .col-xs-4 { text-align: center; }
+footer h3 { 
+    font-family: 'montserratmedium', Verdana, serif;
+    text-align: center;
+    color: #693100;
+}
+
+/*//////////////////////////////////////////////////////////
+// L A Y O U T   M O B I L E   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
 @media only screen and (max-width: 480px) {
 
-    /*//////////////////////////////////////////////////////////
-    // L A Y O U T
-    //////////////////////////////////////////////////////////*/
-
-    body{
-        background-color: #38335B;
-    }
-    section {
-        display: inline;
-        position: relative;
-        z-index: 8;
-    }
-    section h2:first-child { margin-top: 0; }
-    .container-fluid { margin-top: 65px; }
-
     /* Jumbotron */
-    .jumbotron { background-color: #050028; }
-    .jumbotron h2 { 
-        font-family: 'kingthings_wroteregular', Verdana, serif;
-        font-style: bold;
-        font-size: 2vw;
-        color: #9c640c;
-        padding-bottom: 0.8%;
-        text-align: center;
-    }
-    .jumbotron p {
-        font-family: 'montserratmedium', Verdana, serif;
-        font-size: 1vw;
-        color: #9c640c;
-        text-align: center;
-    }
+    .jumbotron h2 { font-size: 4vw; }
+    .jumbotron p { font-size: 3vw; }
 
     /* About Section */
-    .slogan p { font-style: italic !important; padding-bottom: 0.8%; }
-    .about-standard-services p { font-style: normal; padding-top: 1.5%; }
-    .about-special-services p { font-style: normal; }
-    .opening-hours p { 
-        font-family: 'kingthings_wroteregular', Verdana, serif !important;
-        font-size: 1.8vw;
-        padding-top: 0.8%;
-    }
-    .opening-hours table {
-        font-family: 'montserratsemibold', Verdana, serif;
-        font-size: 1vw;
-        color: #9c640c;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .opening-hours th { text-align: right; }
+    .about-standard-services p { padding-top: 5%; }
+    .jumbotron#opening-hours { padding-top: 9%; }
+    .jumbotron#opening-hours table { font-size: 3vw; }
 
     /* Contact Us Section */
-    .jumbotron#contact-info div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0.5%;       
-    }
-    .jumbotron#contact-info img {
-        height: auto;
-        max-width: 0.9%;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .jumbotron#contact-info span {
-        font-family: 'montserratmedium', Verdana, serif;
-        font-size: 0.8vw;
-        color: #9c640c;
-        padding-left: 0.8%;
-    }
-    .jumbotron#contact-info a {
-        font-family: 'montserratmedium', Verdana, serif;
-        font-style: italic;
-        font-size: 0.8vw;
-        color: #9c640c;
-        padding-left: 0.8%;
-    }
-
-    /* Jawg Map */
-    .jawg-container {
-        position: relative;
-        padding-bottom: 30%;
-        height: 0;
-        overflow: hidden;
-        margin-bottom: 1.8%;
-    }
-    .jawg-container iframe {
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+    .jumbotron#contact-info { margin-bottom: 2%; }
+    .jumbotron#contact-info div { padding-top: 2.5%; }
+    .jumbotron#contact-info img { max-width: 4%; }
+    .jumbotron#contact-info span { font-size: 2vw; padding-left: 1.5%; }
+    .jumbotron#contact-info a { font-size: 2vw; padding-left: 1.5%; }
+    .map-container { padding-bottom: 100%; }
 
     /* Footer */
-    footer {
-        background-color: #050028;
-        padding: 2% 0;
-        margin-top: 0;
+    footer { padding: 2% 0; }
+    footer img {
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10%
     }
-    footer .col-xs-4 { text-align: center; }
-    footer img { height: auto; max-width: 50%; }
-    footer h3 { 
-        font-family: 'montserratmedium', Verdana, serif;
-        font-size: 0.8vw;
-        text-align: center;
-        color: #693100;
-        padding-bottom: 1%;
-    }
+    footer h3 { font-size: 2.5vw; padding-bottom: 1%; }
 }
 
 /*//////////////////////////////////////////////////////////
-// P C   B R O W S E R
+// L A Y O U T   P C   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
 @media only screen and (min-width: 961px) {
 
-    /*//////////////////////////////////////////////////////////
-    // L A Y O U T
-    //////////////////////////////////////////////////////////*/
-
-    body{
-        background-color: #38335B;
-    }
-    section {
-        display: inline;
-        position: relative;
-        z-index: 8;
-    }
-    section h2:first-child { margin-top: 0; }
-    .container-fluid { margin-top: 65px; }
-
     /* Jumbotron */
-    .jumbotron { background-color: #050028; }
-    .jumbotron h2 { 
-        font-family: 'kingthings_wroteregular', Verdana, serif;
-        font-style: bold;
-        font-size: 2vw;
-        color: #9c640c;
-        padding-bottom: 0.8%;
-        text-align: center;
-    }
-    .jumbotron p {
-        font-family: 'montserratmedium', Verdana, serif;
-        font-size: 1vw;
-        color: #9c640c;
-        text-align: center;
-    }
+    .jumbotron h2 { font-size: 2vw; }
+    .jumbotron p { font-size: 1vw; }
 
     /* About Section */
-    .slogan p { font-style: italic !important; padding-bottom: 0.8%; }
-    .about-standard-services p { font-style: normal; padding-top: 1.5%; }
-    .about-special-services p { font-style: normal; }
-    .opening-hours p { 
-        font-family: 'kingthings_wroteregular', Verdana, serif !important;
-        font-size: 1.8vw;
-        padding-top: 0.8%;
-    }
-    .opening-hours table {
-        font-family: 'montserratsemibold', Verdana, serif;
-        font-size: 1vw;
-        color: #9c640c;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .opening-hours th { text-align: right; }
+    .about-standard-services p { padding-top: 1.5%; }
+    .jumbotron#opening-hours { padding-top: 3%; }
+    .jumbotron#opening-hours table { font-size: 1vw; }
 
     /* Contact Us Section */
-    .jumbotron#contact-info div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 0.5%;       
-    }
-    .jumbotron#contact-info img {
-        height: auto;
-        max-width: 0.9%;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    .jumbotron#contact-info span {
-        font-family: 'montserratmedium', Verdana, serif;
-        font-size: 0.8vw;
-        color: #9c640c;
-        padding-left: 0.8%;
-    }
-    .jumbotron#contact-info a {
-        font-family: 'montserratmedium', Verdana, serif;
-        font-style: italic;
-        font-size: 0.8vw;
-        color: #9c640c;
-        padding-left: 0.8%;
-    }
-
-    /* Jawg Map */
-    .jawg-container {
-        position: relative;
-        padding-bottom: 30%;
-        height: 0;
-        overflow: hidden;
-        margin-bottom: 1.8%;
-    }
-    .jawg-container iframe {
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+    .jumbotron#contact-info div { padding-top: 0.5%; }
+    .jumbotron#contact-info img { max-width: 0.9%; }
+    .jumbotron#contact-info span { font-size: 0.8vw; padding-left: 0.8%; }
+    .jumbotron#contact-info a { font-size: 0.8vw; padding-left: 0.8%; }
+    .map-container { padding-bottom: 30%; }
 
     /* Footer */
-    footer {
-        background-color: #050028;
-        padding: 2% 0;
-        margin-top: 0;
-    }
-    footer .col-xs-4 { text-align: center; }
+    footer { padding: 2% 0; }
     footer img { height: auto; max-width: 50%; }
-    footer h3 { 
-        font-family: 'montserratmedium', Verdana, serif;
-        font-size: 0.8vw;
-        text-align: center;
-        color: #693100;
-        padding-bottom: 1%;
-    }
+    footer h3 { font-size: 0.8vw; padding-bottom: 1%; }
 }
 
 /*//////////////////////////////////////////////////////////
