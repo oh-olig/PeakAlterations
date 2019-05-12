@@ -7,16 +7,16 @@
 
 /* Navbar Brand */
 .navbar-default .navbar-brand {
-    font-family: 'kingthings_wroteregular', Verdana, serif;
+    font-family: 'architects_daughterregular', Verdana, serif;
+    font-size: 25px;
     color: #9c640c;
     background-color: transparent;
-    padding: 18px 15px;
 }
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover { color: #38335B; background-color: transparent; }
 
 /* Navbar Links */
-.navbar-default .navbar-nav > li > a { font-family: 'montserratmedium', Verdana, serif; color: #9c640c; }
+.navbar-default .navbar-nav > li > a { font-family: 'quicksandregular', Verdana, serif; color: #9c640c; }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -63,14 +63,14 @@ section h2:first-child { margin-top: 0; }
 /* Jumbotron */
 .jumbotron { background-color: #050028; }
 .jumbotron h2 { 
-    font-family: 'kingthings_wroteregular', Verdana, serif;
+    font-family: 'architects_daughterregular', Verdana, serif;
     font-style: bold;
     color: #9c640c;
     padding-bottom: 0.8%;
     text-align: center;
 }
 .jumbotron p {
-    font-family: 'montserratmedium', Verdana, serif;
+    font-family: 'quicksandregular', Verdana, serif;
     color: #9c640c;
     text-align: center;
 }
@@ -78,7 +78,7 @@ section h2:first-child { margin-top: 0; }
 /* About Section */
 .slogan p { font-style: italic !important; padding-bottom: 0.8%; }
 .jumbotron#opening-hours table {
-    font-family: 'montserratsemibold', Verdana, serif;
+    font-family: 'quicksandregular', Verdana, serif;
     color: #9c640c;
     margin-left: auto;
     margin-right: auto;
@@ -97,11 +97,11 @@ section h2:first-child { margin-top: 0; }
     vertical-align: middle;
 }
 .jumbotron#contact-info span {
-    font-family: 'montserratmedium', Verdana, serif;
+    font-family: 'quicksandregular', Verdana, serif;
     color: #9c640c;
 }
 .jumbotron#contact-info a {
-    font-family: 'montserratmedium', Verdana, serif;
+    font-family: 'quicksandregular', Verdana, serif;
     font-style: italic;
     color: #9c640c;
 }
@@ -124,7 +124,7 @@ section h2:first-child { margin-top: 0; }
 footer { background-color: #050028; margin-top: 0 !important; }
 footer .col-xs-4 { text-align: center; }
 footer h3 { 
-    font-family: 'montserratmedium', Verdana, serif;
+    font-family: 'quicksandregular', Verdana, serif;
     text-align: center;
     color: #693100;
 }
@@ -133,10 +133,10 @@ footer h3 {
 // L A Y O U T   M O B I L E   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 960px) { /* Mobile: max-width: 480px */
 
     /* Jumbotron */
-    .jumbotron h2 { font-size: 4vw; }
+    .jumbotron h2 { font-size: 4.5vw; }
     .jumbotron p { font-size: 3vw; }
 
     /* About Section */
@@ -147,9 +147,9 @@ footer h3 {
     /* Contact Us Section */
     .jumbotron#contact-info { margin-bottom: 2%; }
     .jumbotron#contact-info div { padding-top: 2.5%; }
-    .jumbotron#contact-info img { max-width: 4%; }
-    .jumbotron#contact-info span { font-size: 2vw; padding-left: 1.5%; }
-    .jumbotron#contact-info a { font-size: 2vw; padding-left: 1.5%; }
+    .jumbotron#contact-info img { max-width: 3.5%; }
+    .jumbotron#contact-info span { font-size: 2.5vw; padding-left: 1.5%; }
+    .jumbotron#contact-info a { font-size: 2.5vw; padding-left: 1.5%; }
     .map-container { padding-bottom: 100%; }
 
     /* Footer */
@@ -180,8 +180,8 @@ footer h3 {
     /* Contact Us Section */
     .jumbotron#contact-info div { padding-top: 0.5%; }
     .jumbotron#contact-info img { max-width: 0.9%; }
-    .jumbotron#contact-info span { font-size: 0.8vw; padding-left: 0.8%; }
-    .jumbotron#contact-info a { font-size: 0.8vw; padding-left: 0.8%; }
+    .jumbotron#contact-info span { font-size: 1vw; padding-left: 0.8%; }
+    .jumbotron#contact-info a { font-size: 1vw; padding-left: 0.8%; }
     .map-container { padding-bottom: 30%; }
 
     /* Footer */
@@ -195,28 +195,25 @@ footer h3 {
 //////////////////////////////////////////////////////////*/
 
 @font-face {
-    font-family: 'kingthings_wroteregular';
-    src: url('../css/fonts/kingthings_wrote-webfont.woff2') format('woff2'),
-         url('../css/fonts/kingthings_wrote-webfont.woff') format('woff');
+    font-family: 'architects_daughterregular';
+    src: url('../css/fonts/architectsdaughter-webfont.woff2') format('woff2'),
+         url('../css/fonts/architectsdaughter-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'montserratsemibold';
-    src: url('../css/fonts/montserrat-semibold-webfont.woff2') format('woff2'),
-         url('../css/fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-family: 'quicksandregular';
+    src: url('../css/fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('../css/fonts/quicksand-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: 'montserratmedium';
-    src: url('../css/fonts/montserrat-medium-webfont.woff2') format('woff2'),
-         url('../css/fonts/montserrat-medium-webfont.woff') format('woff');
+    font-family: 'quicksandbold';
+    src: url('../css/fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('../css/fonts/quicksand-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
