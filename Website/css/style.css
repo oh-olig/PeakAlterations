@@ -5,7 +5,6 @@
 .navbar { z-index: 9999; margin-top: 0 !important; }
 .navbar-default { background-color: #050028; border-color: #9c640c; }
 
-/* Navbar Brand */
 .navbar-default .navbar-brand {
     font-family: 'architects_daughterregular', Verdana, serif;
     font-size: 25px;
@@ -15,17 +14,15 @@
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:hover { color: #38335B; background-color: transparent; }
 
-/* Navbar Links */
 .navbar-default .navbar-nav > li > a { font-family: 'quicksandregular', Verdana, serif; color: #9c640c; }
-.navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus { color: #9c640c; background-color: #38335B; }
+.navbar-default .navbar-nav > .active > a:focus { color: #9c640c; background-color: #050028; }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover { color: #9c640c; background-color: #38335B; }
 
-/* Navbar Links - Toggle */
-.navbar-default .navbar-toggle { border-color: #9c640c; }
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { color: #9c640c; background-color: #38335B; }
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus { border-color: #9c640c; background-color: #050028; }
+.navbar-default .navbar-toggle:hover { color: #9c640c; background-color: #38335B; }
 
 /*//////////////////////////////////////////////////////////
 // I M A G E S
@@ -39,12 +36,20 @@ img#shopfront {
     margin-right: auto;
 }
 
-/* Row of Images */
 .row-of-img { display: flex;}
 .row-of-img > div:not(:last-child) { margin-right: 2%; }
-.img1 { flex: 1; }
-.img2 { flex: 0.768; }
-.img3 { flex: 0.8; }
+.img-jacket { flex: 1; }
+.img-cushions { flex: 0.768; }
+.img-bag { flex: 0.8; }
+.img-dress-60s-front { flex: 0.75; }
+.img-dress-60s-closeup { flex: 0.75; }
+.img-dress-60s-back { flex: 0.75; }
+.img-dress-camo-front { flex: 0.8; }
+.img-dress-camo-making { flex: 1.33; }
+.img-dress-camo-back { flex: 0.8; }
+.img-cushions-stacked { flex: 1.33; }
+.img-making-cushions { flex: 0.75; }
+.img-cushions-floral { flex: 1.33; }
 .scaled-img { max-width: 100%; height: auto; }
 
 /*//////////////////////////////////////////////////////////
@@ -52,15 +57,16 @@ img#shopfront {
 //////////////////////////////////////////////////////////*/
 
 body{ background-color: #38335B; }
+
 section {
     display: inline;
     position: relative;
     z-index: 8;
 }
 section h2:first-child { margin-top: 0; }
+
 .container-fluid { margin-top: 65px; }
 
-/* Jumbotron */
 .jumbotron { background-color: #050028; }
 .jumbotron h2 { 
     font-family: 'architects_daughterregular', Verdana, serif;
@@ -86,21 +92,21 @@ section h2:first-child { margin-top: 0; }
 .jumbotron#opening-hours th { text-align: right; }
 
 /* Contact Us Section */
-.jumbotron#contact-info div {
+#slide-contact .jumbotron div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.jumbotron#contact-info img {
+#slide-contact .jumbotron img {
     height: auto;
     display: inline-block;
     vertical-align: middle;
 }
-.jumbotron#contact-info span {
+#slide-contact .jumbotron span {
     font-family: 'quicksandregular', Verdana, serif;
     color: #9c640c;
 }
-.jumbotron#contact-info a {
+#slide-contact .jumbotron a {
     font-family: 'quicksandregular', Verdana, serif;
     font-style: italic;
     color: #9c640c;
@@ -109,7 +115,6 @@ section h2:first-child { margin-top: 0; }
     position: relative;
     height: 0;
     overflow: hidden;
-    margin-bottom: 1.8%;
 }
 .map-container iframe {
     pointer-events: none;
@@ -135,21 +140,28 @@ footer h3 {
 
 @media only screen and (max-width: 960px) { /* Mobile: max-width: 480px */
 
-    /* Jumbotron */
     .jumbotron h2 { font-size: 4.5vw; }
     .jumbotron p { font-size: 3vw; }
 
+    .text-below-row-of-img p { padding-top: 5%; }
+
     /* About Section */
-    .about-standard-services p { padding-top: 5%; }
     .jumbotron#opening-hours { padding-top: 9%; }
     .jumbotron#opening-hours table { font-size: 3vw; }
 
     /* Contact Us Section */
     .jumbotron#contact-info { margin-bottom: 2%; }
     .jumbotron#contact-info div { padding-top: 2.5%; }
-    .jumbotron#contact-info img { max-width: 3.5%; }
-    .jumbotron#contact-info span { font-size: 2.5vw; padding-left: 1.5%; }
-    .jumbotron#contact-info a { font-size: 2.5vw; padding-left: 1.5%; }
+    .jumbotron#contact-info img { max-width: 4%; }
+    .jumbotron#contact-info span { font-size: 3vw; padding-left: 2%; }
+    .jumbotron#contact-info a { font-size: 3vw; padding-left: 2%; }
+    .jumbotron#location div { padding-top: 0; }
+    .jumbotron#location img { max-width: 3.5%; margin-bottom: 5%; }
+    .jumbotron#location span {
+        font-size: 2.5vw;
+        padding-left: 1.5%;
+        margin-bottom: 5%;
+    }
     .map-container { padding-bottom: 100%; }
 
     /* Footer */
@@ -168,13 +180,13 @@ footer h3 {
 
 @media only screen and (min-width: 961px) {
 
-    /* Jumbotron */
     .jumbotron h2 { font-size: 2vw; }
     .jumbotron p { font-size: 1vw; }
 
+    .text-below-row-of-img p { padding-top: 1.5%; }
+
     /* About Section */
-    .about-standard-services p { padding-top: 1.5%; }
-    .jumbotron#opening-hours { padding-top: 3%; }
+    .jumbotron#opening-hours { padding-top: 2%; }
     .jumbotron#opening-hours table { font-size: 1vw; }
 
     /* Contact Us Section */
@@ -182,6 +194,13 @@ footer h3 {
     .jumbotron#contact-info img { max-width: 0.9%; }
     .jumbotron#contact-info span { font-size: 1vw; padding-left: 0.8%; }
     .jumbotron#contact-info a { font-size: 1vw; padding-left: 0.8%; }
+    .jumbotron#location div { padding-top: 0.5%; }
+    .jumbotron#location img { max-width: 0.9%; margin-bottom: 1.5%; }
+    .jumbotron#location span {
+        font-size: 1vw;
+        padding-left: 0.8%;
+        margin-bottom: 1.5%;
+    }
     .map-container { padding-bottom: 30%; }
 
     /* Footer */

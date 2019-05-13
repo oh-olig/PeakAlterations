@@ -54,13 +54,13 @@ $(document).ready(function () {
     //////////////////////////////////////////////////////////// 
     
     // Allow map srcoll zoom after click
-    $('.jawg-container').click(function () {
-        $('.jawg-container iframe').css("pointer-events", "auto");
+    $('.map-container').click(function () {
+        $('.map-container iframe').css("pointer-events", "auto");
     });
     
     // Prevent map scroll zoom
-    $( ".jawg-container" ).mouseleave(function() {
-      $('.jawg-container iframe').css("pointer-events", "none");
+    $( ".map-container" ).mouseleave(function() {
+      $('.map-container iframe').css("pointer-events", "none");
     });
     
 });
