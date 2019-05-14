@@ -1,3 +1,13 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "header"
+        "content";
+}
+body #content { overflow-y: auto; }
+
+
 /*//////////////////////////////////////////////////////////
 // N A V B A R
 //////////////////////////////////////////////////////////*/
@@ -65,7 +75,7 @@ section {
 }
 section h2:first-child { margin-top: 0; }
 
-.container-fluid { margin-top: 65px; }
+/* .container-fluid { margin-top: 65px; } */
 
 .jumbotron { background-color: #050028; }
 .jumbotron h2 { 
