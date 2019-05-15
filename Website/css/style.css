@@ -34,6 +34,7 @@ img#shopfront {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
 .row-of-img { display: flex;}
@@ -144,6 +145,7 @@ footer h3 {
     .text-below-row-of-img p { padding-top: 5%; }
 
     /* About Section */
+    .jumbotron#about-description { margin-bottom: 2%; }
     .jumbotron#opening-hours { padding-top: 9%; }
     .jumbotron#opening-hours table { font-size: 3vw; }
 

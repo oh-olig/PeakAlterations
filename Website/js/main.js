@@ -32,7 +32,8 @@ $(document).ready(function () {
         
         // Navbar Inactive/Active Link
         $("ul.nav li").removeClass("active");
-        $(this).parent().toggleClass("active"); 
+        $(this).parent().toggleClass("active");
+        $(".navbar-collapse").removeClass("in");
         
         // Anchor Link ID
         var id = $(this).attr("href");
