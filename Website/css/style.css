@@ -1,29 +1,8 @@
-#grid {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    display: grid;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-        "header"
-        "content";
-}
-#grid #header {
-    grid-area: header;
-}
-#grid #content {
-    grid-area: content;
-    overflow-y: auto;
-}
-
-
 /*//////////////////////////////////////////////////////////
 // N A V B A R
 //////////////////////////////////////////////////////////*/
 
-.navbar { z-index: 9999; margin-top: 0 !important; margin-bottom: 0 !important; }
+.navbar { z-index: 9999; margin-top: 0 !important; }
 .navbar-default { background-color: #050028; border-color: #9c640c; }
 
 .navbar-default .navbar-brand {
@@ -85,8 +64,6 @@ section {
     z-index: 8;
 }
 section h2:first-child { margin-top: 0; }
-
-/* .container-fluid { margin-top: 65px; } */
 
 .jumbotron { background-color: #050028; }
 .jumbotron h2 { 

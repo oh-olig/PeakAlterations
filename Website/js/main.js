@@ -23,20 +23,20 @@ $(document).ready(function () {
     
     // Animate Scroll
     controller.scrollTo(function (newpos) {
-        alert(newpos);
-        TweenMax.to($("#grid #content"), 0.5, {scrollTo: {y: newpos}});
+        newpos = newpos - 50;
+        TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
     });
     
     // Bind Scroll Anchor Links
     $("ul.nav li a, a.navbar-brand img").on("click", function (e) {  
         
         // Navbar Inactive/Active Link
-        //$("ul.nav li").removeClass("active");       
-        //$(this).parent().toggleClass("active"); 
+        $("ul.nav li").removeClass("active");
+        $(this).parent().toggleClass("active"); 
         
         // Anchor Link ID
         var id = $(this).attr("href");
-        
+       
         if ($(id).length > 0) {
             e.preventDefault(); 
             
