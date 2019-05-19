@@ -8,8 +8,8 @@
 	<!-- Initial Viewport & Disable Zooming  -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">    
 	<!-- Site Description & Keywords -->
-	<meta name="keywords" content="">
-	<meta name="description" content="">   
+	<meta name="keywords" content="llangollen, alterations, clothing repairs, upholstery, sewing, bespoke clothing">
+	<meta name="description" content="clothing alterations, resizing, restyling and repairs - bespoke clothing and upholstery - based in llangollen, north wales">
 	<!-- Icons -->
 	<link rel="shortcut icon" href="res/logo/logo_gold.png">
     <link rel="apple-touch-icon-precomposed" href="res/logo/logo_gold.png">
@@ -59,7 +59,7 @@
                 </div>
                 <div class="row-of-img">
                     <div class="img-jacket">
-                        <img alt="Jacket" src="res/img/jacket.jpg" class="scaled-img" />
+                        <img alt="Jacket" src="res/img/jacket.jpg" class="scaled-img" id = "myImg"/>
                     </div>
                     <div class="img-cushions">
                         <img alt="Cushions" src="res/img/cushions.jpg" class="scaled-img" />
@@ -88,6 +88,18 @@
             </div>
         </div>
     </section>
+
+     <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+    
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+    
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
     
     <!-- Portfolio Slide -->
     <a id="portfolio"></a>
