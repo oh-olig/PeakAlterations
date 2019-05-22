@@ -55,14 +55,28 @@ $(document).ready(function () {
     // M O D A L
     //////////////////////////////////////////////////////////// 
 
-    // Get the modal
-    var modal = document.getElementById("myModal");
+    // Get the model
+    var modal = document.getElementById("imgModal");
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("myImg");
-    var modalImg = document.getElementById("img01");
+    // Get the images
+    var imgJacket = document.getElementById("imgJacket");
+    var imgCushions = document.getElementById("imgCushions");
+    var imgBag = document.getElementById("imgBag");
+
+    // Insert image inside the modal on click - use its "alt" text as a caption
+    var modalImg = document.getElementById("modalContent");
     var captionText = document.getElementById("caption");
-    img.onclick = function(){
+    imgJacket.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    imgCushions.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    imgBag.onclick = function(){
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
@@ -80,7 +94,7 @@ $(document).ready(function () {
     // J A W G   M A P
     //////////////////////////////////////////////////////////// 
     
-    // Allow map srcoll zoom after click
+    // Allow map scroll zoom after click
     $('.map-container').click(function () {
         $('.map-container iframe').css("pointer-events", "auto");
     });
