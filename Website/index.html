@@ -88,13 +88,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Modal -->
-    <div id="imgModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalContent">
-        <div id="caption"></div>
-    </div>
     
     <!-- Portfolio Slide -->
     <a id="portfolio"></a>
@@ -106,13 +99,13 @@
                 <h2>1960s Style Dress</h2>
                 <div class="row-of-img">
                     <div class="img-dress-60s-front">
-                        <img alt="Dress-60s-front" src="res/img/dress-60s-front.jpg" class="scaled-img" />
+                        <img alt="Dress-60s-front" src="res/img/dress-60s-front.jpg" class="scaled-img" onclick="openLightbox();currentSlide(1)"/>
                     </div>
                     <div class="img-dress-60s-closeup">
-                        <img alt="Dress-60s-closeup" src="res/img/dress-60s-closeup.jpg" class="scaled-img" />
+                        <img alt="Dress-60s-closeup" src="res/img/dress-60s-closeup.jpg" class="scaled-img" onclick="openLightbox();currentSlide(2)" />
                     </div>
                     <div class="img-dress-60s-back">
-                        <img alt="Dress-60s-back" src="res/img/dress-60s-back.jpg" class="scaled-img" />
+                        <img alt="Dress-60s-back" src="res/img/dress-60s-back.jpg" class="scaled-img" onclick="openLightbox();currentSlide(3)" />
                     </div> 
                 </div>
                 <div class="text-below-row-of-img">
@@ -202,7 +195,44 @@
                 
             </div>
         </div>
-    </footer> 
+    </footer>
+
+    <!-- Modal -->
+    <div id="imgModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalContent">
+        <div id="caption"></div>
+    </div>
+
+    <!-- Modal/Lightbox -->
+    <div id="imgLightbox" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="lightbox-content">
+        <div class="imgSlides">
+            <div class="numbertext">1 / 3</div>
+            <img src="res/img/dress-60s-front.jpg" style="width:100%" id="60s Dress Front">
+            <div class="text">60s Dress Front</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">2 / 3</div>
+            <img src="res/img/dress-60s-closeup.jpg" style="width:100%" id="60s Dress Closeup">
+            <div class="text">60s Dress Closeup</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">3 / 3</div>
+            <img src="res/img/dress-60s-back.jpg" style="width:100%" id="60s Dress Back">
+            <div class="text">60s Dress Back</div>
+        </div>
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- Progress Dots -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
     
 	<!-- JS -->
     <script src="res/inc/jquery/3.2.1/jquery.min.js"></script>
