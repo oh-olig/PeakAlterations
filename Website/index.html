@@ -115,13 +115,13 @@
                 <h2>Camoflage Overalls</h2>
                 <div class="row-of-img">
                     <div class="img-dress-camo-front">
-                        <img alt="Dress-camo-front" src="res/img/dress-camo-front.jpg" class="scaled-img" />
+                        <img alt="Dress-camo-front" src="res/img/dress-camo-front.jpg" class="scaled-img" onclick="openLightbox();currentSlide(4)" />
                     </div>
                     <div class="img-dress-camo-making">
-                        <img alt="Dress-camo-making" src="res/img/dress-camo-making.jpg" class="scaled-img" />
+                        <img alt="Dress-camo-making" src="res/img/dress-camo-making.jpg" class="scaled-img" onclick="openLightbox();currentSlide(5)" />
                     </div>
                     <div class="img-dress-camo-back">
-                        <img alt="Dress-camo-back" src="res/img/dress-camo-back.jpg" class="scaled-img" />
+                        <img alt="Dress-camo-back" src="res/img/dress-camo-back.jpg" class="scaled-img" onclick="openLightbox();currentSlide(6)" />
                     </div> 
                 </div>
                 <div class="text-below-row-of-img">
@@ -131,13 +131,13 @@
                 <h2>Cushions & Upholstery</h2>
                 <div class="row-of-img">
                     <div class="img-cushions-stacked">
-                        <img alt="Cushions-stacked" src="res/img/cushions-stacked.jpg" class="scaled-img" />
+                        <img alt="Cushions-stacked" src="res/img/cushions-stacked.jpg" class="scaled-img" onclick="openLightbox();currentSlide(7)" />
                     </div>
                     <div class="img-making-cushions">
-                        <img alt="Making-cushions" src="res/img/making-cushions.jpg" class="scaled-img" />
+                        <img alt="Making-cushions" src="res/img/making-cushions.jpg" class="scaled-img" onclick="openLightbox();currentSlide(8)" />
                     </div>
                     <div class="img-cushions-floral">
-                        <img alt="Cushions-floral" src="res/img/cushions-floral.jpg" class="scaled-img" />
+                        <img alt="Cushions-floral" src="res/img/cushions-floral.jpg" class="scaled-img" onclick="openLightbox();currentSlide(9)" />
                     </div> 
                 </div>
                 <div class="text-below-row-of-img">
@@ -181,12 +181,16 @@
         </div>
     </section>
 
+    <!-- Facebook Plugin
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeakalterations&tabs=timeline&width=500&height=900&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    -->
+
     <!-- Website Footer -->
     <footer class="container-fluid">
         <h3> Peak Alterations © 2019. All Right Reserved. </h3>
         <div class="row">
             <div class="col-xs-4">
-
+                
             </div>
             <div class="col-xs-4">
                 <img alt="Footer-logo" src="res/logo/logo_footer.svg" />
@@ -209,19 +213,49 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="lightbox-content">
         <div class="imgSlides">
-            <div class="numbertext">1 / 3</div>
+            <div class="numbertext">1 / 9</div>
             <img src="res/img/dress-60s-front.jpg" style="width:100%" id="60s Dress Front">
-            <div class="text">60s Dress Front</div>
+            <div class="text"> 1960s Style Dress: Front</div>
         </div>
         <div class="imgSlides">
-            <div class="numbertext">2 / 3</div>
+            <div class="numbertext">2 / 9</div>
             <img src="res/img/dress-60s-closeup.jpg" style="width:100%" id="60s Dress Closeup">
-            <div class="text">60s Dress Closeup</div>
+            <div class="text"> 1960s Style Dress: Closeup</div>
         </div>
         <div class="imgSlides">
-            <div class="numbertext">3 / 3</div>
+            <div class="numbertext">3 / 9</div>
             <img src="res/img/dress-60s-back.jpg" style="width:100%" id="60s Dress Back">
-            <div class="text">60s Dress Back</div>
+            <div class="text"> 1960s Style Dress: Back</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">4 / 9</div>
+            <img src="res/img/dress-camo-front.jpg" style="width:100%" id="Camo Overalls Front">
+            <div class="text"> Camo Overalls: Front</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">5 / 9</div>
+            <img src="res/img/dress-camo-making.jpg" style="width:100%" id="Camo Overalls Fabrication">
+            <div class="text"> Camo Overalls: Fabrication</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">6 / 9</div>
+            <img src="res/img/dress-camo-back.jpg" style="width:100%" id="Camo Overalls Back">
+            <div class="text"> Camo Overalls: Back</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">7 / 9</div>
+            <img src="res/img/cushions-stacked.jpg" style="width:100%" id="Cushions Stacked">
+            <div class="text"> Cushions Stacked</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">8 / 9</div>
+            <img src="res/img/making-cushions.jpg" style="width:100%" id="Cushions Fabrications">
+            <div class="text"> Cushions Fabrication</div>
+        </div>
+        <div class="imgSlides">
+            <div class="numbertext">9 / 9</div>
+            <img src="res/img/cushions-floral.jpg" style="width:100%" id="Upholstery Floral">
+            <div class="text"> Floral Upholstery</div>
         </div>
         <!-- Next/previous controls -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -231,6 +265,12 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
         </div>
     </div>
     
@@ -246,6 +286,6 @@
     <!-- Leaflet -->
     <script src="res/inc/leaflet/leaflet.js"></script>
     <!-- Main -->
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
