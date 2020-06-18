@@ -34,7 +34,7 @@ img#shopfront {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 #about-description img { cursor: pointer; transition: 0.3s; }
 #about-description img:hover { opacity: 0.7;}
@@ -231,13 +231,20 @@ section h2:first-child { margin-top: 0; }
     padding-bottom: 0.8%;
     text-align: center;
 }
+.jumbotron h1 { 
+    font-family: 'quicksandregular', Verdana, serif;
+    font-style: bold;
+    color: #9c640c;
+    padding-bottom: 0.8%;
+    text-align: center;
+}
 .jumbotron p {
     font-family: 'quicksandregular', Verdana, serif;
     color: #9c640c;
     text-align: center;
 }
 
-/* About Section */
+/* About */
 .slogan p { font-style: italic !important; padding-bottom: 0.8%; }
 .jumbotron#opening-hours table {
     font-family: 'quicksandregular', Verdana, serif;
@@ -247,7 +254,7 @@ section h2:first-child { margin-top: 0; }
 }
 .jumbotron#opening-hours th { text-align: right; }
 
-/* Contact Us Section */
+/* Contact */
 #contact-info div, #location div {
     display: flex;
     justify-content: center;
@@ -297,6 +304,7 @@ footer h3 {
 @media only screen and (max-width: 960px) { /* Mobile: max-width: 480px */
 
     .jumbotron h2 { font-size: 4.5vw; }
+    .jumbotron h1 { font-size: 3vw; }
     .jumbotron p { font-size: 3vw; }
 
     .text-below-row-of-img p { padding-top: 5%; }
@@ -338,6 +346,7 @@ footer h3 {
 @media only screen and (min-width: 961px) {
 
     .jumbotron h2 { font-size: 2vw; }
+    .jumbotron h1 { font-size: 3vw; }
     .jumbotron p { font-size: 1vw; }
 
     .text-below-row-of-img p { padding-top: 1.5%; }
