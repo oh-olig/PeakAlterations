@@ -28,166 +28,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#home"> Peak Alterations </a>
+            <a class="navbar-brand" href="#home" id="content/home.html"> Peak Alterations </a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-                <li><a title="About" href="#about"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> &nbsp;About</a></li>
-                <li><a title="Portfolio" href="#portfolio"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &nbsp;Portfolio</a></li>
-				<li><a title="Contact" href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> &nbsp;Contact</a></li>
+                <li><a title="About" href="#about" id="content/about.html"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> &nbsp;About</a></li>
+                <li><a title="Portfolio" href="#portfolio" id="content/portfolio.html"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> &nbsp;Portfolio</a></li>
+				<li><a title="Contact" href="#contact" id="content/contact.html"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> &nbsp;Contact</a></li>
 			</ul>
 		</div>
-	</nav>
-    
-	<!-- Home Slide -->
-    <a id="home"></a>
-    <section id="slide-home">
-        <div class="container-fluid">
-            <img alt="Shopfront" src="res/img/shopfront.jpg" id="shopfront" />
-        </div>
-    </section> 
-    
-    <!-- About Slide -->
-    <a id="about"></a>
-    <section id="slide-about">
-        <div class="container-fluid">
-            <div class="jumbotron" id="about-description">
-                <h2>Welcome to Peak Alterations</h2>
-                <hr class="my-4">
-                <div class="slogan">            
-                    <p>Helping you to look your best with what you've got.</p> 
-                </div>
-                <div class="row-of-img">
-                    <div class="img-jacket">
-                        <img alt="Jacket" src="res/img/jacket.jpg" class="scaled-img" id = "imgJacket"/>
-                    </div>
-                    <div class="img-cushions">
-                        <img alt="Cushions" src="res/img/cushions.jpg" class="scaled-img" id = "imgCushions"/>
-                    </div>
-                    <div class="img-bag">
-                        <img alt="Bag" src="res/img/bag.jpg" class="scaled-img" id = "imgBag"/>
-                    </div> 
-                </div>
-                <div class="text-below-row-of-img">
-                    <p>Restyling, resizing, repairing and customizing bridal, formal, party wear, dresses, skirts, blouses, shirts, jeans, trousers, suits, jackets, coats, leather wear and more.</p>
-                </div>
-                <div><p>Offering a made to measure service, be it for creating the perfect curtains or a special dress for the big day.</p></div>
-            </div>
-            <div class="jumbotron" id="opening-hours">
-                <h2> Opening Hours </h2>
-                <hr class="my-4">
-                <table>
-                    <tr><th>Sunday :</th><td>&nbsp;Closed</td></tr>
-                    <tr><th>Monday :</th><td>&nbsp;9am - 5pm</td></tr>
-                    <tr><th>Tuesday :</th><td>&nbsp;9am - 5pm</td></tr>
-                    <tr><th>Wednesday :</th><td>&nbsp;9am - 5pm</td></tr>
-                    <tr><th>Thursday :</th><td>&nbsp;9am - 5pm</td></tr>
-                    <tr><th>Friday :</th><td>&nbsp;9am - 5pm</td></tr>
-                    <tr><th>Saturday :</th><td>&nbsp;9am - 4pm</td></tr>
-                </table>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Portfolio Slide -->
-    <a id="portfolio"></a>
-    <section id="slide-portfolio">
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h2>Portfolio</h2>
-                <hr class="my-4">
-                <h2>1960s Style Dress</h2>
-                <div class="row-of-img">
-                    <div class="img-dress-60s-front">
-                        <img alt="Dress-60s-front" src="res/img/dress-60s-front.jpg" class="scaled-img" onclick="openLightbox();currentSlide(1)"/>
-                    </div>
-                    <div class="img-dress-60s-closeup">
-                        <img alt="Dress-60s-closeup" src="res/img/dress-60s-closeup.jpg" class="scaled-img" onclick="openLightbox();currentSlide(2)" />
-                    </div>
-                    <div class="img-dress-60s-back">
-                        <img alt="Dress-60s-back" src="res/img/dress-60s-back.jpg" class="scaled-img" onclick="openLightbox();currentSlide(3)" />
-                    </div> 
-                </div>
-                <div class="text-below-row-of-img">
-                    <p>Bespoke dress made with a gorgeous 1960s pattern fabric from our collection. Lovely drape and structure with the darts and cross strapped back.</p>
-                </div>
-                <hr class="my-4">
-                <h2>Camoflage Overalls</h2>
-                <div class="row-of-img">
-                    <div class="img-dress-camo-front">
-                        <img alt="Dress-camo-front" src="res/img/dress-camo-front.jpg" class="scaled-img" onclick="openLightbox();currentSlide(4)" />
-                    </div>
-                    <div class="img-dress-camo-making">
-                        <img alt="Dress-camo-making" src="res/img/dress-camo-making.jpg" class="scaled-img" onclick="openLightbox();currentSlide(5)" />
-                    </div>
-                    <div class="img-dress-camo-back">
-                        <img alt="Dress-camo-back" src="res/img/dress-camo-back.jpg" class="scaled-img" onclick="openLightbox();currentSlide(6)" />
-                    </div> 
-                </div>
-                <div class="text-below-row-of-img">
-                    <p>Custom set of overalls made with camoflage fabric and pink leopard print velour to jazz them up. Perfect for everyday flex and festival season! </p>
-                </div>
-                <hr class="my-4">
-                <h2>Cushions & Upholstery</h2>
-                <div class="row-of-img">
-                    <div class="img-cushions-stacked">
-                        <img alt="Cushions-stacked" src="res/img/cushions-stacked.jpg" class="scaled-img" onclick="openLightbox();currentSlide(7)" />
-                    </div>
-                    <div class="img-making-cushions">
-                        <img alt="Making-cushions" src="res/img/making-cushions.jpg" class="scaled-img" onclick="openLightbox();currentSlide(8)" />
-                    </div>
-                    <div class="img-cushions-floral">
-                        <img alt="Cushions-floral" src="res/img/cushions-floral.jpg" class="scaled-img" onclick="openLightbox();currentSlide(9)" />
-                    </div> 
-                </div>
-                <div class="text-below-row-of-img">
-                    <p>Cushion covers made with fabrics from our wondeful range. Pillow cushions to match a set of curtains and blinds. Caravan upholstery and curtains using vintage materials and fabric. </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Contact Slide -->
-    <a id="contact"></a>
-    <section id="slide-contact" >
-        <div class="container-fluid">
-            <div class="jumbotron" id="contact-info">
-                <h2>Contact Us</h2>
-                <hr class="my-4">
-                <div>
-                    <img alt="Facebook-icon" src="res/icon/facebook-link_gold.svg" />
-                    <a href="https://www.facebook.com/peakalterations/"> Follow me on Facebook</a>
-                </div>
-                <div>
-                    <img alt="Email-icon" src="res/icon/envelope_gold.svg" />
-                    <span> peakalterations@gmail.com</span>
-                </div>
-                <div>
-                    <img alt="Phone-icon" src="res/icon/phone_gold.svg" />
-                    <span> 07572 973 641</span>
-                </div>
-            </div>
-            <div class="jumbotron" id="location">
-                <h2>Based in Llangollen</h2>
-                <hr class="my-4">
-                <div>
-                    <img alt="Address-icon" src="res/icon/map-marker_gold.svg" />
-                    <span> Peak Alterations, Bronhaul, Abbey Rd, Llangollen, LL20 8SN</span>
-                </div>
-                <div class="map-container">
-                    <iframe src="https://api.jawg.io/maps/88da64b8-a3ed-4d37-aa76-a3b2e9ea31e0/376e4d5f-a711-4fb5-8637-4faea7634190.html?access-token=n2hohBJI7zNDYlxvsJp8Lavy1ZJOUlR82z2YzbBwpfp6dLAqB2iDia8h638ji9zS" ></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
+    </nav>
 
-    <!-- Facebook Plugin
-    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeakalterations&tabs=timeline&width=500&height=900&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-    -->
+    <!-- Website Content -->
+    <div id="content"></div>
 
     <!-- Website Footer -->
     <footer class="container-fluid">
-        <h3> Peak Alterations © 2019. All Right Reserved. </h3>
+        <h3> Peak Alterations © 2020. All Right Reserved. </h3>
         <div class="row">
             <div class="col-xs-4">
                 

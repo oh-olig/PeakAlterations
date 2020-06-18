@@ -1,0 +1,99 @@
+<div class="container-fluid">
+    <div class="jumbotron" id="portfolio">
+        <h2>Portfolio</h2>
+        <hr class="my-4">
+        <h2>1960s Style Dress</h2>
+        <div class="row-of-img">
+            <div class="img-dress-60s-front">
+                <img alt="Dress-60s-front" src="res/img/dress-60s-front.jpg" class="scaled-img" onclick="openLightbox();currentSlide(1)"/>
+            </div>
+            <div class="img-dress-60s-closeup">
+                <img alt="Dress-60s-closeup" src="res/img/dress-60s-closeup.jpg" class="scaled-img" onclick="openLightbox();currentSlide(2)" />
+            </div>
+            <div class="img-dress-60s-back">
+                <img alt="Dress-60s-back" src="res/img/dress-60s-back.jpg" class="scaled-img" onclick="openLightbox();currentSlide(3)" />
+            </div> 
+        </div>
+        <div class="text-below-row-of-img">
+            <p>Bespoke dress made with a gorgeous 1960s pattern fabric from our collection. Lovely drape and structure with the darts and cross strapped back.</p>
+        </div>
+        <hr class="my-4">
+        <h2>Camoflage Overalls</h2>
+        <div class="row-of-img">
+            <div class="img-dress-camo-front">
+                <img alt="Dress-camo-front" src="res/img/dress-camo-front.jpg" class="scaled-img" onclick="openLightbox();currentSlide(4)" />
+            </div>
+            <div class="img-dress-camo-making">
+                <img alt="Dress-camo-making" src="res/img/dress-camo-making.jpg" class="scaled-img" onclick="openLightbox();currentSlide(5)" />
+            </div>
+            <div class="img-dress-camo-back">
+                <img alt="Dress-camo-back" src="res/img/dress-camo-back.jpg" class="scaled-img" onclick="openLightbox();currentSlide(6)" />
+            </div> 
+        </div>
+        <div class="text-below-row-of-img">
+            <p>Custom set of overalls made with camoflage fabric and pink leopard print velour to jazz them up. Perfect for everyday flex and festival season! </p>
+        </div>
+        <hr class="my-4">
+        <h2>Cushions & Upholstery</h2>
+        <div class="row-of-img">
+            <div class="img-cushions-stacked">
+                <img alt="Cushions-stacked" src="res/img/cushions-stacked.jpg" class="scaled-img" onclick="openLightbox();currentSlide(7)" />
+            </div>
+            <div class="img-making-cushions">
+                <img alt="Making-cushions" src="res/img/making-cushions.jpg" class="scaled-img" onclick="openLightbox();currentSlide(8)" />
+            </div>
+            <div class="img-cushions-floral">
+                <img alt="Cushions-floral" src="res/img/cushions-floral.jpg" class="scaled-img" onclick="openLightbox();currentSlide(9)" />
+            </div> 
+        </div>
+        <div class="text-below-row-of-img">
+            <p>Cushion covers made with fabrics from our wondeful range. Pillow cushions to match a set of curtains and blinds. Caravan upholstery and curtains using vintage materials and fabric. </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    ////////////////////////////////////////////////////////////
+    // L I G H T B O X
+    //////////////////////////////////////////////////////////// 
+
+    // Open the Lightbox
+    function openLightbox() {
+        document.getElementById("imgLightbox").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("imgLightbox").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("imgSlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" dotactive", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " dotactive";
+    }
+
+</script>

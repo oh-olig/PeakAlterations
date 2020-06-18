@@ -36,10 +36,10 @@ img#shopfront {
     margin-right: auto;
     margin-bottom: 30px;
 }
-#slide-about img { cursor: pointer; transition: 0.3s; }
-#slide-about img:hover { opacity: 0.7;}
-#slide-portfolio img { cursor: pointer; transition: 0.3s; }
-#slide-portfolio img:hover { opacity: 0.7;}
+#about-description img { cursor: pointer; transition: 0.3s; }
+#about-description img:hover { opacity: 0.7;}
+#portfolio img { cursor: pointer; transition: 0.3s; }
+#portfolio img:hover { opacity: 0.7;}
 .row-of-img { display: flex;}
 .row-of-img > div:not(:last-child) { margin-right: 2%; }
 .img-jacket { flex: 1; }
@@ -208,13 +208,13 @@ img#shopfront {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.active, .dot:hover { background-color: #9c640c; }
+.dotactive, .dot:hover { background-color: #9c640c; }
 
 /*//////////////////////////////////////////////////////////
 // L A Y O U T   C R O S S   P L A T F O R M
 //////////////////////////////////////////////////////////*/
 
-body{ background-color: #38335B; }
+body{ padding-top: 60px; background-color: #38335B; }
 
 section {
     display: inline;
@@ -248,21 +248,21 @@ section h2:first-child { margin-top: 0; }
 .jumbotron#opening-hours th { text-align: right; }
 
 /* Contact Us Section */
-#slide-contact .jumbotron div {
+#contact-info div, #location div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#slide-contact .jumbotron img {
+#contact-info img, #location img {
     height: auto;
     display: inline-block;
     vertical-align: middle;
 }
-#slide-contact .jumbotron span {
+#contact-info span, #location span {
     font-family: 'quicksandregular', Verdana, serif;
     color: #9c640c;
 }
-#slide-contact .jumbotron a {
+#contact-info a, #location a {
     font-family: 'quicksandregular', Verdana, serif;
     font-style: italic;
     color: #9c640c;

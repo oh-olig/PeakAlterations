@@ -1,0 +1,46 @@
+<div class="container-fluid">
+    <div class="jumbotron" id="contact-info">
+        <h2>Contact Us</h2>
+        <hr class="my-4">
+        <div>
+            <img alt="Facebook-icon" src="res/icon/facebook-link_gold.svg" />
+            <a href="https://www.facebook.com/peakalterations/"> Follow me on Facebook</a>
+        </div>
+        <div>
+            <img alt="Email-icon" src="res/icon/envelope_gold.svg" />
+            <span> peakalterations@gmail.com</span>
+        </div>
+        <div>
+            <img alt="Phone-icon" src="res/icon/phone_gold.svg" />
+            <span> 07572 973 641</span>
+        </div>
+    </div>
+    <div class="jumbotron" id="location">
+        <h2>Based in Llangollen</h2>
+        <hr class="my-4">
+        <div>
+            <img alt="Address-icon" src="res/icon/map-marker_gold.svg" />
+            <span> Peak Alterations, Pentrefelin, Llangollen, LL20 8, United Kingdom</span>
+        </div>
+        <div class="map-container">
+            <iframe src="https://api.jawg.io/maps/88da64b8-a3ed-4d37-aa76-a3b2e9ea31e0/376e4d5f-a711-4fb5-8637-4faea7634190.html?access-token=n2hohBJI7zNDYlxvsJp8Lavy1ZJOUlR82z2YzbBwpfp6dLAqB2iDia8h638ji9zS" ></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    ////////////////////////////////////////////////////////////
+    // J A W G   M A P
+    //////////////////////////////////////////////////////////// 
+
+    // Allow map scroll zoom after click
+    $('.map-container').click(function () {
+        $('.map-container iframe').css("pointer-events", "auto");
+    });
+
+    // Prevent map scroll zoom
+    $( ".map-container" ).mouseleave(function() {
+        $('.map-container iframe').css("pointer-events", "none");
+    });
+
+</script>

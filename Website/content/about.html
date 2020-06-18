@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <div class="jumbotron" id="about-description">
+        <h2>Welcome to Peak Alterations</h2>
+        <hr class="my-4">
+        <div class="slogan">            
+            <p>Helping you to look your best with what you've got.</p> 
+        </div>
+        <div class="row-of-img">
+            <div class="img-jacket">
+                <img alt="Jacket" src="res/img/jacket.jpg" class="scaled-img" id = "imgJacket"/>
+            </div>
+            <div class="img-cushions">
+                <img alt="Cushions" src="res/img/cushions.jpg" class="scaled-img" id = "imgCushions"/>
+            </div>
+            <div class="img-bag">
+                <img alt="Bag" src="res/img/bag.jpg" class="scaled-img" id = "imgBag"/>
+            </div> 
+        </div>
+        <div class="text-below-row-of-img">
+            <p>Restyling, resizing, repairing and customizing bridal, formal, party wear, dresses, skirts, blouses, shirts, jeans, trousers, suits, jackets, coats, leather wear and more.</p>
+        </div>
+        <div><p>Offering a made to measure service, be it for creating the perfect curtains or a special dress for the big day.</p></div>
+    </div>
+    <div class="jumbotron" id="opening-hours">
+        <h2> Opening Hours </h2>
+        <hr class="my-4">
+        <table>
+            <tr><th>Sunday :</th><td>&nbsp;Closed</td></tr>
+            <tr><th>Monday :</th><td>&nbsp;9am - 5pm</td></tr>
+            <tr><th>Tuesday :</th><td>&nbsp;9am - 5pm</td></tr>
+            <tr><th>Wednesday :</th><td>&nbsp;9am - 5pm</td></tr>
+            <tr><th>Thursday :</th><td>&nbsp;9am - 5pm</td></tr>
+            <tr><th>Friday :</th><td>&nbsp;9am - 5pm</td></tr>
+            <tr><th>Saturday :</th><td>&nbsp;9am - 4pm</td></tr>
+        </table>
+    </div>
+</div>
+
+<script>
+    
+    ////////////////////////////////////////////////////////////
+    // M O D A L
+    //////////////////////////////////////////////////////////// 
+
+    // Get the model
+    var modal = document.getElementById("imgModal");
+
+    // Get the images
+    var imgJacket = document.getElementById("imgJacket");
+    var imgCushions = document.getElementById("imgCushions");
+    var imgBag = document.getElementById("imgBag");
+
+    // Insert image inside the modal on click - use its "alt" text as a caption
+    var modalImg = document.getElementById("modalContent");
+    var captionText = document.getElementById("caption");
+    imgJacket.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    imgCushions.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    imgBag.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+</script>
