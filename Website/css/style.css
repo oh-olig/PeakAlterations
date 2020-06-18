@@ -216,13 +216,6 @@ img#shopfront {
 
 body{ padding-top: 60px; background-color: #38335B; }
 
-section {
-    display: inline;
-    position: relative;
-    z-index: 8;
-}
-section h2:first-child { margin-top: 0; }
-
 .jumbotron { background-color: #050028; }
 .jumbotron h2 { 
     font-family: 'architects_daughterregular', Verdana, serif;
@@ -296,6 +289,12 @@ footer h3 {
     text-align: center;
     color: #693100;
 }
+footer a { color: #693100; }
+footer .TETW { 
+    font-family: 'blackout-midnight', Verdana, serif;
+    text-align: center;
+    color: #693100;
+}
 
 /*//////////////////////////////////////////////////////////
 // L A Y O U T   M O B I L E   B R O W S E R
@@ -337,6 +336,7 @@ footer h3 {
         margin-bottom: 10%
     }
     footer h3 { font-size: 2.5vw; padding-bottom: 1%; }
+    footer .TETW { font-size: 3vw; }
 }
 
 /*//////////////////////////////////////////////////////////
@@ -373,6 +373,7 @@ footer h3 {
     footer { padding: 2% 0; }
     footer img { height: auto; max-width: 50%; }
     footer h3 { font-size: 0.8vw; padding-bottom: 1%; }
+    footer .TETW { font-size: 1vw; }
 }
 
 /*//////////////////////////////////////////////////////////
@@ -383,6 +384,14 @@ footer h3 {
     font-family: 'architects_daughterregular';
     src: url('../css/fonts/architectsdaughter-webfont.woff2') format('woff2'),
          url('../css/fonts/architectsdaughter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blackout-midnight';
+    src: url('../css/fonts/blackout-midnight-webfont.woff2') format('woff2'),
+         url('../css/fonts/blackout-midnight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
