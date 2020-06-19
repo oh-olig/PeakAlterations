@@ -8,11 +8,9 @@
 .navbar-default .navbar-brand {
     font-family: 'architects_daughterregular', Verdana, serif;
     font-size: 25px;
-    color: #9c640c;
+    color: #9c640c !important;
     background-color: transparent;
 }
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:hover { color: #38335B; background-color: transparent; }
 
 .navbar-default .navbar-nav > li > a { font-family: 'quicksandregular', Verdana, serif; color: #9c640c; }
 .navbar-default .navbar-nav > .active > a,
@@ -382,7 +380,7 @@ footer .TETW {
     .text-below-row-of-img p { padding-top: 1.5%; }
 
     .home-text h1 { font-family: 'architects_daughterregular', Arial, sans-serif; font-size: 8em; }
-    .home-text p { font-family: 'quicksandregular', Arial, sans-serif; font-size: 2em; }
+    .home-text p { font-family: 'quicksandregular', Arial, sans-serif; font-size: 1.5em; }
 
     /* About Section */
     .jumbotron#opening-hours { padding-top: 2%; }
