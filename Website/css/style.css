@@ -28,13 +28,22 @@
 // I M A G E S
 //////////////////////////////////////////////////////////*/
 
-img#shopfront {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
+.home-image {
+    margin-top: -10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../res/img/retroVWcampervans.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.home-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9c640c;
 }
 #about-description img { cursor: pointer; transition: 0.3s; }
 #about-description img:hover { opacity: 0.7;}
@@ -282,7 +291,7 @@ body{ padding-top: 60px; background-color: #38335B; }
 }
 
 /* Footer */
-footer { background-color: #050028; margin-top: 0 !important; }
+footer { background-color: #050028; margin-top: 0 !important; overflow-x: hidden; }
 footer .col-xs-4 { text-align: center; }
 footer h3 { 
     font-family: 'quicksandregular', Verdana, serif;
@@ -300,13 +309,28 @@ footer .TETW {
 // L A Y O U T   M O B I L E   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 960px) { /* Mobile: max-width: 480px */
+@media only screen and (max-width: 800px) {
 
-    .jumbotron h2 { font-size: 4.5vw; }
+    /* Bootstrap - Navbar */
+    .navbar-header { float: none; }
+    .navbar-left, .navbar-right { float: none !important; }
+    .navbar-toggle { display: block; }
+    .navbar-collapse { border-top: 1px solid transparent; box-shadow: inset 0 1px 0 rgba(255,255,255,0.1); }
+    .navbar-fixed-top { top: 0; border-width: 0 0 1px; }
+    .navbar-collapse.collapse { display: none !important; }
+    .navbar-nav { float: none !important; margin-top: 7.5px; }
+    .navbar-nav > li { float: none; }
+    .navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; }
+    .collapse.in { display: block !important; }
+
+    .jumbotron h2 { font-size: 4.5vw; margin-top: 0 !important; }
     .jumbotron h1 { font-size: 3vw; }
     .jumbotron p { font-size: 3vw; }
 
     .text-below-row-of-img p { padding-top: 5%; }
+
+    .home-text h1 { font-family: 'architects_daughterregular', Arial, sans-serif; font-size: 5em; }
+    .home-text p { font-family: 'quicksandregular', Arial, sans-serif; font-size: 1em; }
 
     /* About Section */
     .jumbotron#about-description { margin-bottom: 2%; }
@@ -343,13 +367,16 @@ footer .TETW {
 // L A Y O U T   P C   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 801px) {
 
     .jumbotron h2 { font-size: 2vw; }
     .jumbotron h1 { font-size: 3vw; }
     .jumbotron p { font-size: 1vw; }
 
     .text-below-row-of-img p { padding-top: 1.5%; }
+
+    .home-text h1 { font-family: 'architects_daughterregular', Arial, sans-serif; font-size: 8em; }
+    .home-text p { font-family: 'quicksandregular', Arial, sans-serif; font-size: 2em; }
 
     /* About Section */
     .jumbotron#opening-hours { padding-top: 2%; }
