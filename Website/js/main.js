@@ -17,6 +17,7 @@ $(document).ready(function () {
         var id = $(this).attr("id");
 
         $("#content").load(id);
+        window.scroll(0, 0);
     });
     
     ////////////////////////////////////////////////////////////
