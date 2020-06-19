@@ -346,6 +346,7 @@ footer .TETW {
     .jumbotron#contact-info img { max-width: 4%; }
     .jumbotron#contact-info span { font-size: 3vw; padding-left: 2%; }
     .jumbotron#contact-info a { font-size: 3vw; padding-left: 2%; }
+    .jumbotron#location { padding-bottom: 25px; }
     .jumbotron#location div { padding-top: 0; }
     .jumbotron#location img { max-width: 3.5%; margin-bottom: 5%; }
     .jumbotron#location span {
@@ -353,7 +354,11 @@ footer .TETW {
         padding-left: 1.5%;
         margin-bottom: 5%;
     }
-    .jumbotron#location p { font-size: 2.5vw; padding-top: 2%; }
+    .jumbotron#location p { 
+        font-size: 2.5vw; 
+        padding-top: 3% !important; 
+        margin-bottom: 0; 
+    }
     .map-container { padding-bottom: 100%; }
 
     /* Footer */
