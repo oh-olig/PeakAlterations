@@ -269,7 +269,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     width: auto;
     padding: 16px;
     margin-top: -50px;
-    color: #9c640c;
+    color: #fff;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -282,7 +282,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 .next:hover { background-color: rgba(0, 0, 0, 0.8); }
 
 .numbertext {
-    color: #9c640c;
+    color: #000;
     font-family: 'quicksand-regular', Verdana, serif;
     font-size: 12px;
     padding: 8px 12px;
@@ -293,16 +293,16 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 #imgLightbox .text {
     font-family: 'quicksand-regular', Verdana, serif;
     text-align: center;
-    background-color: #050028;
+    background-color: #fff;
     padding: 2px 16px;
-    color: #9c640c;
+    color: #000;
 }
 
 .dot-container {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     text-align: center;
-    background-color: #050028;
+    background-color: #fff;
     margin-bottom: 10%;
 }
 .dot {
@@ -315,7 +315,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.dotactive, .dot:hover { background-color: #9c640c; }
+.dotactive, .dot:hover { background-color: #000; }
 
 /*//////////////////////////////////////////////////////////
 // F O N T S
