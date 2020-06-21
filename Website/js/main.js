@@ -4,10 +4,8 @@ $(document).ready(function () {
     // P A G E   N A V I G A T I O N
     ////////////////////////////////////////////////////////////
 
-    // Initially Load Home Content
     $("#content").load("content/home.html");
 
-    // Navbar Links Change Content
     $("ul.nav li a, a.navbar-brand").on("click", function (e) {  
 
         $("ul.nav li").removeClass("active");
@@ -24,7 +22,6 @@ $(document).ready(function () {
     // A N I M A T I O N
     //////////////////////////////////////////////////////////// 
     
-    // Footer Logos Tween
     TweenMax.set($("footer img"), {filter: "grayscale(100%)", autoAlpha: 0.2});
     $("footer img").on({
         mouseenter:function() {

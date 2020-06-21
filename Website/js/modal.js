@@ -2,37 +2,30 @@
 // M O D A L
 //////////////////////////////////////////////////////////// 
 
-// Get the model
-var modal = document.getElementById("imgModal");
+var modal = document.getElementById("img-modal");
+var imgCol1 = document.getElementById("imgCol1");
+var imgCol2 = document.getElementById("imgCol2");
+var imgCol3 = document.getElementById("imgCol3");
 
-// Get the images
-var imgJacket = document.getElementById("imgJacket");
-var imgCushions = document.getElementById("imgCushions");
-var imgBag = document.getElementById("imgBag");
-
-// Insert image inside the modal on click - use its "alt" text as a caption
 var modalImg = document.getElementById("modalContent");
 var captionText = document.getElementById("caption");
-imgJacket.onclick = function(){
+imgCol1.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
-imgCushions.onclick = function(){
+imgCol2.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
-imgBag.onclick = function(){
+imgCol3.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }

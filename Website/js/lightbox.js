@@ -2,32 +2,28 @@
 // L I G H T B O X
 //////////////////////////////////////////////////////////// 
 
-// Open the Lightbox
 function openLightbox() {
-    document.getElementById("imgLightbox").style.display = "block";
+    document.getElementById("img-lightbox").style.display = "block";
 }
 
-// Close the Modal
-function closeModal() {
-    document.getElementById("imgLightbox").style.display = "none";
+function closeLightbox() {
+    document.getElementById("img-lightbox").style.display = "none";
 }
 
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("imgSlides");
+    var slides = document.getElementsByClassName("img-slides");
     var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}

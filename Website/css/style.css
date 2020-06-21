@@ -6,13 +6,13 @@
 .navbar-default { background-color: #050028; border-color: #9c640c; }
 
 .navbar-default .navbar-brand {
-    font-family: 'architects_daughterregular', Verdana, serif;
-    font-size: 25px;
+    font-family: 'architects-daughter', Verdana, serif;
+    font-size: 30px;
     color: #9c640c !important;
     background-color: transparent;
 }
 
-.navbar-default .navbar-nav > li > a { font-family: 'quicksandregular', Verdana, serif; color: #9c640c; }
+.navbar-default .navbar-nav > li > a { font-family: 'quicksand-regular', Verdana, serif; font-size: 15px; color: #9c640c; }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus { color: #9c640c; background-color: #050028; }
 .navbar-default .navbar-nav > li > a:hover,
@@ -28,7 +28,7 @@
 
 .home-image {
     margin-top: -15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../res/img/dachshund-box.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../res/img/home.jpg");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,25 +49,24 @@
 #portfolio img:hover { opacity: 0.7;}
 .row-of-img { display: flex;}
 .row-of-img > div:not(:last-child) { margin-right: 2%; }
-.img-jacket { flex: 1; }
-.img-cushions { flex: 0.768; }
-.img-bag { flex: 0.8; }
-.img-dress-60s-front { flex: 0.75; }
-.img-dress-60s-closeup { flex: 0.75; }
-.img-dress-60s-back { flex: 0.75; }
-.img-dress-camo-front { flex: 0.8; }
-.img-dress-camo-making { flex: 1.33; }
-.img-dress-camo-back { flex: 0.8; }
-.img-cushions-stacked { flex: 1.33; }
-.img-making-cushions { flex: 0.75; }
-.img-cushions-floral { flex: 1.33; }
+.img-col-1 { flex: 1; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-col-2 { flex: 0.768; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-col-3 { flex: 0.8; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-1-col-1 { flex: 0.75; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-1-col-2 { flex: 0.75; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-1-col-3 { flex: 0.75; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-2-col-1 { flex: 0.8; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-2-col-2 { flex: 1.33; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-2-col-3 { flex: 0.8; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-3-col-1 { flex: 1.33; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-3-col-2 { flex: 0.75; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
+.img-row-3-col-3 { flex: 1.33; border-style: solid; border-color: #9c640c; border-width: 0.1vmax; }
 .scaled-img { max-width: 100%; height: auto; }
 
 /*//////////////////////////////////////////////////////////
 // M O D A L
 //////////////////////////////////////////////////////////*/
 
-/* The Modal (background) */
 .modal {
     display: none;
     position: fixed;
@@ -82,7 +81,6 @@
     background-color: rgba(0,0,0,0.9);
 }
 
-/* Modal Content (Image) */
 .modal-content {
     margin: auto;
     display: block;
@@ -90,9 +88,8 @@
     max-width: 700px;
 }
 
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     margin: auto;
     display: block;
     width: 80%;
@@ -103,7 +100,6 @@
     height: 150px;
 }
 
-/* Add Animation - Zoom in the Modal */
 .modal-content, #caption {
     animation-name: zoom;
     animation-duration: 0.6s;
@@ -113,7 +109,6 @@
     to {transform:scale(1)}
 }
 
-/* The Close Button */
 .close {
     position: absolute;
     top: 15px;
@@ -130,7 +125,6 @@
     cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
@@ -140,20 +134,17 @@
 /*//////////////////////////////////////////////////////////
 // L I G H T B O X
 //////////////////////////////////////////////////////////*/
-  
-/* Lightbox Content */
+
 .lightbox-content {
     position: relative;
     margin: auto;
     padding: 0;
     width: 80%;
     max-width: 700px;
-}
-  
-/* Hide the slides by default */
+}  
 .imgSlides { display: none; }
-  
-/* Next & previous buttons */
+.imgSlidea img { width: 100%; }
+
 .prev,
 .next {
     cursor: pointer;
@@ -170,34 +161,27 @@
     user-select: none;
     -webkit-user-select: none;
 }
-  
-/* Position the "next button" to the right */
 .next { right: 0; border-radius: 3px 0 0 3px; }
-  
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover { background-color: rgba(0, 0, 0, 0.8); }
-  
-/* Number text (1/3 etc) */
+
 .numbertext {
     color: #9c640c;
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
   
-/* Caption text */
 #imgLightbox .text {
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     text-align: center;
     background-color: #050028;
     padding: 2px 16px;
     color: #9c640c;
 }
-  
-/* The dots/bullets/indicators */
+
 .dot-container {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
@@ -225,36 +209,38 @@ body{ padding-top: 65px; background-color: #38335B; }
 
 .jumbotron { background-color: #050028; margin-bottom: 15px !important; }
 .jumbotron h2 { 
-    font-family: 'architects_daughterregular', Verdana, serif;
+    font-family: 'architects-daughter', Verdana, serif;
     font-style: bold;
     color: #9c640c;
+    margin-top: 0 !important;
     padding-bottom: 0.8%;
     text-align: center;
 }
 .jumbotron h1 { 
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     font-style: bold;
     color: #9c640c;
     padding-bottom: 0.8%;
     text-align: center;
 }
 .jumbotron p {
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     color: #9c640c;
     text-align: center;
 }
 
-/* About */
-.slogan p { font-style: italic !important; padding-bottom: 0.8%; }
-.jumbotron#opening-hours table {
-    font-family: 'quicksandregular', Verdana, serif;
+.home-text h1 { font-family: 'architects-daughter', Arial, sans-serif; }
+.home-text p { font-family: 'quicksand-regular', Arial, sans-serif; }
+
+.slogan p { padding-bottom: 0.8%; }
+#opening-hours table {
+    font-family: 'quicksand-regular', Verdana, serif;
     color: #9c640c;
     margin-left: auto;
     margin-right: auto;
 }
-.jumbotron#opening-hours th { text-align: right; }
+#opening-hours th { text-align: right; }
 
-/* Contact */
 #contact-info div, #location div {
     display: flex;
     justify-content: center;
@@ -266,11 +252,11 @@ body{ padding-top: 65px; background-color: #38335B; }
     vertical-align: middle;
 }
 #contact-info span, #location span {
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     color: #9c640c;
 }
 #contact-info a, #location a {
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     font-style: italic;
     color: #9c640c;
 }
@@ -288,7 +274,6 @@ body{ padding-top: 65px; background-color: #38335B; }
     height: 100%;
 }
 
-/* Footer */
 footer { 
     background-color: #050028; 
     margin-top: 0 !important; 
@@ -296,15 +281,25 @@ footer {
 }
 footer .col-xs-4 { text-align: center; }
 footer h3 { 
-    font-family: 'quicksandregular', Verdana, serif;
+    font-family: 'quicksand-regular', Verdana, serif;
     text-align: center;
     color: #693100;
 }
-footer a { color: #693100; }
-footer .TETW { 
+.footer-logo {
+    margin: 2vh;
+    position: relative;
+    text-align: center;
+}
+.footer-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.tetw h3 { font-family: 'quicksand-regular', Verdana, serif !important; }
+.tetw a { color: #693100; }
+.tetw-logo { 
     font-family: 'blackout-midnight', Verdana, serif;
     text-align: center;
-    color: #693100;
 }
 
 /*//////////////////////////////////////////////////////////
@@ -313,7 +308,6 @@ footer .TETW {
 
 @media only screen and (max-width: 800px) {
 
-    /* Bootstrap - Navbar */
     .navbar-header { float: none; }
     .navbar-left, .navbar-right { float: none !important; }
     .navbar-toggle { display: block; }
@@ -326,50 +320,42 @@ footer .TETW {
     .collapse.in { display: block !important; }
 
     .jumbotron { padding-top: 25px !important; }
-    .jumbotron h2 { font-size: 4.5vw; margin-top: 0 !important; }
+    .jumbotron h2 { font-size: 5vw; }
     .jumbotron h1 { font-size: 3vw; }
     .jumbotron p { font-size: 3vw; }
 
     .text-below-row-of-img p { padding-top: 5%; }
 
-    .home-text h1 { font-family: 'architects_daughterregular', Arial, sans-serif; font-size: 5em; }
-    .home-text p { font-family: 'quicksandregular', Arial, sans-serif; font-size: 1em; }
+    .home-text h1 { font-size: 5em; }
+    .home-text p { font-size: 1em; }
 
-    /* About Section */
-    .jumbotron#about-description { margin-bottom: 2%; }
-    .jumbotron#opening-hours { padding-top: 9%; }
-    .jumbotron#opening-hours table { font-size: 3vw; }
+    #about-description { margin-bottom: 2%; }
+    #opening-hours { padding-top: 9%; }
+    #opening-hours table { font-size: 3vw; }
 
-    /* Contact Us Section */
-    .jumbotron#contact-info { margin-bottom: 2%; }
-    .jumbotron#contact-info div { padding-top: 2.5%; }
-    .jumbotron#contact-info img { max-width: 4%; }
-    .jumbotron#contact-info span { font-size: 3vw; padding-left: 2%; }
-    .jumbotron#contact-info a { font-size: 3vw; padding-left: 2%; }
-    .jumbotron#location { padding-bottom: 25px; }
-    .jumbotron#location div { padding-top: 0; }
-    .jumbotron#location img { max-width: 3.5%; margin-bottom: 5%; }
-    .jumbotron#location span {
+    #contact-info { margin-bottom: 2%; }
+    #contact-info div { padding-top: 2.5%; }
+    #contact-info img { max-width: 4%; }
+    #contact-info span { font-size: 3vw; padding-left: 2%; }
+    #contact-info a { font-size: 3vw; padding-left: 2%; }
+    #location { padding-bottom: 25px; }
+    #location div { padding-top: 0; }
+    #location img { max-width: 3.5%; margin-bottom: 5%; }
+    #location span {
         font-size: 2.5vw;
         padding-left: 1.5%;
         margin-bottom: 5%;
     }
-    .jumbotron#location p { 
+    #location p { 
         font-size: 2.5vw; 
         padding-top: 3% !important; 
         margin-bottom: 0; 
     }
     .map-container { padding-bottom: 100%; }
 
-    /* Footer */
-    footer { padding: 2% 0; }
-    footer img {
-        height: auto;
-        max-width: 100%;
-        margin-bottom: 10%
-    }
-    footer h3 { font-size: 2.5vw; padding-bottom: 1%; }
-    footer .TETW { font-size: 3vw; }
+    footer h3 { font-size: 2vmax; margin: 2vmax; }
+    footer .TETW { font-size: 2vmax; }
+    .footer-logo { height: 20vmax; }
 }
 
 /*//////////////////////////////////////////////////////////
@@ -379,38 +365,34 @@ footer .TETW {
 @media only screen and (min-width: 801px) {
 
     .jumbotron h2 { font-size: 2vw; }
-    .jumbotron h1 { font-size: 3vw; }
+    .jumbotron h1 { font-size: 2vw; }
     .jumbotron p { font-size: 1vw; }
 
     .text-below-row-of-img p { padding-top: 1.5%; }
 
-    .home-text h1 { font-family: 'architects_daughterregular', Arial, sans-serif; font-size: 8em; }
-    .home-text p { font-family: 'quicksandregular', Arial, sans-serif; font-size: 1.5em; }
+    .home-text h1 { font-size: 8em; }
+    .home-text p { font-size: 1.5em; }
 
-    /* About Section */
-    .jumbotron#opening-hours { padding-top: 2%; }
-    .jumbotron#opening-hours table { font-size: 1vw; }
+    #opening-hours { padding-top: 2%; }
+    #opening-hours table { font-size: 1vw; }
 
-    /* Contact Us Section */
-    .jumbotron#contact-info div { padding-top: 0.5%; }
-    .jumbotron#contact-info img { max-width: 0.9%; }
-    .jumbotron#contact-info span { font-size: 1vw; padding-left: 0.8%; }
-    .jumbotron#contact-info a { font-size: 1vw; padding-left: 0.8%; }
-    .jumbotron#location div { padding-top: 0.5%; }
-    .jumbotron#location img { max-width: 0.9%; margin-bottom: 1.5%; }
-    .jumbotron#location span {
+    #contact-info div { padding-top: 0.5%; }
+    #contact-info img { max-width: 0.9%; }
+    #contact-info span { font-size: 1vw; padding-left: 0.8%; }
+    #contact-info a { font-size: 1vw; padding-left: 0.8%; }
+    #location div { padding-top: 0.5%; }
+    #location img { max-width: 0.9%; margin-bottom: 1.5%; }
+    #location span {
         font-size: 1vw;
         padding-left: 0.8%;
         margin-bottom: 1.5%;
     }
-    .jumbotron#location p { font-size: 1vw; padding-top: 1%; }
+    #location p { font-size: 1vw; padding-top: 1%; }
     .map-container { padding-bottom: 30%; }
 
-    /* Footer */
-    footer { padding: 2% 0; }
-    footer img { height: auto; max-width: 50%; }
-    footer h3 { font-size: 0.8vw; padding-bottom: 1%; }
-    footer .TETW { font-size: 1vw; }
+    footer h3 { font-size: 1vmax; margin: 1.5vmax; }
+    footer .TETW { font-size: 1vmax; }
+    .footer-logo { height: 15vmax; }
 }
 
 /*//////////////////////////////////////////////////////////
@@ -418,33 +400,25 @@ footer .TETW {
 //////////////////////////////////////////////////////////*/
 
 @font-face {
-    font-family: 'architects_daughterregular';
-    src: url('../css/fonts/architectsdaughter-webfont.woff2') format('woff2'),
-         url('../css/fonts/architectsdaughter-webfont.woff') format('woff');
+    font-family: 'architects-daughter';
+    src: url('../css/fonts/architects-daughter.woff2') format('woff2'),
+         url('../css/fonts/architects-daughter.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'blackout-midnight';
-    src: url('../css/fonts/blackout-midnight-webfont.woff2') format('woff2'),
-         url('../css/fonts/blackout-midnight-webfont.woff') format('woff');
+    src: url('../css/fonts/blackout-midnight.woff2') format('woff2'),
+         url('../css/fonts/blackout-midnight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'quicksandregular';
-    src: url('../css/fonts/quicksand-regular-webfont.woff2') format('woff2'),
-         url('../css/fonts/quicksand-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'quicksandbold';
-    src: url('../css/fonts/quicksand-bold-webfont.woff2') format('woff2'),
-         url('../css/fonts/quicksand-bold-webfont.woff') format('woff');
+    font-family: 'quicksand-regular';
+    src: url('../css/fonts/quicksand-regular.woff2') format('woff2'),
+         url('../css/fonts/quicksand-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
