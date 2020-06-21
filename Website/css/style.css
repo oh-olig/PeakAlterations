@@ -258,8 +258,8 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     width: 80%;
     max-width: 700px;
 }  
-.imgSlides { display: none; }
-.imgSlides img { width: 100%; }
+.img-slides { display: none; }
+.img-slides img { width: 100%; }
 
 .prev,
 .next {
@@ -290,7 +290,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     top: 0;
 }
   
-#imgLightbox .text {
+#img-lightbox .text {
     font-family: 'quicksand-regular', Verdana, serif;
     text-align: center;
     background-color: #fff;
