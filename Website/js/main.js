@@ -6,14 +6,8 @@ $(document).ready(function () {
 
     $("#content").load("content/home.html");
 
-    $("ul.nav li a, a.navbar-brand").on("click", function (e) {  
-
-        $("ul.nav li").removeClass("active");
-        $(this).parent().toggleClass("active");
-        $(".navbar-collapse").removeClass("in");
-
+    $(".navigation a, header img").on("click", function (e) {
         var id = $(this).attr("id");
-
         $("#content").load(id);
         window.scroll(0, 0);
     });
@@ -21,7 +15,7 @@ $(document).ready(function () {
     ////////////////////////////////////////////////////////////
     // A N I M A T I O N
     //////////////////////////////////////////////////////////// 
-    
+
     TweenMax.set($("footer img"), {filter: "grayscale(100%)", autoAlpha: 0.2});
     $("footer img").on({
         mouseenter:function() {
