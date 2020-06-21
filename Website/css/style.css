@@ -7,7 +7,7 @@ body { margin: 0; }
 #content {
     border-top: solid;
     border-bottom: solid;
-    border-width: 0.3vmax;
+    border-width: 0.2vmax;
 }
 
 a:link { text-decoration: none; }
@@ -20,7 +20,7 @@ p,
 span { font-family: 'quicksand-regular', Verdana, serif; color: #000; }
 
 h1 { 
-    font-family: 'quicksand-regular', Verdana, serif;
+    font-family: 'vogue-regular', Verdana, serif;
     font-style: bold;
     color: #000;
     text-align: center;
@@ -40,8 +40,16 @@ h1 {
 .navigation { text-align: center; margin: 1vmax 0; }
 .navigation a { display: inline-block; }
 
-.home-text h1 { font-family: 'architects-daughter', Arial, sans-serif !important; color: #fff;}
-.home-text p { font-family: 'quicksand-regular', Arial, sans-serif; color: #fff;}
+.banner { 
+    text-align: center; 
+    border-top: solid; 
+    border-width: 0.2vmax; 
+    background-color: #9c640c;
+}
+.banner p { font-family: 'quicksand-bold', Verdana, serif; color: #000;margin: 0; padding: 1vmax; }
+
+.home-text h1 { font-family: 'architects-daughter', Arial, sans-serif; color: #fff;}
+.home-text p { color: #fff; }
 
 .container { position: relative; text-align: center; }
 
@@ -74,7 +82,6 @@ h1 {
 }
 
 footer { text-align: center; overflow-x: hidden; }
-footer p { font-family: 'quicksand-regular', Verdana, serif; color: #000; }
 footer a > img { margin-left: 10px; margin-right: 10px; }
 /* .tetw a { font-family: 'quicksand-regular', Verdana, serif; color: #000; } */
 .tetw-logo { font-family: 'blackout-midnight', Verdana, serif; text-align: center; }
@@ -97,7 +104,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
         position: relative;
         text-align: center;
     }
-    h1 { font-size: 2.3vmax; }
+    h1 { font-size: 3vmax; }
     a, p, span { font-size: 1.9vmax; }
 
     #contact-info div:first-of-type, #location div:first-of-type { padding-top: 1vmax; }
@@ -338,9 +345,25 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 }
 
 @font-face {
+    font-family: 'quicksand-bold';
+    src: url('../css/fonts/quicksand-bold.woff2') format('woff2'),
+         url('../css/fonts/quicksand-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'quicksand-regular';
     src: url('../css/fonts/quicksand-regular.woff2') format('woff2'),
          url('../css/fonts/quicksand-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vogue-regular';
+    src: url('../css/fonts/vogue-regular.woff2') format('woff2'),
+         url('../css/fonts/vogue-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
