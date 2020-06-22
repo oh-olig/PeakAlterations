@@ -46,7 +46,12 @@ h1 {
     border-width: 0.2vmax; 
     background-color: #9c640c;
 }
-.banner p { font-family: 'quicksand-bold', Verdana, serif; color: #000;margin: 0; padding: 1vmax; }
+.banner p { 
+    font-family: 'quicksand-bold', Verdana, serif;
+    color: #000;
+    margin: 0;
+    padding: 1vmax;
+}
 
 .home-text h1 { font-family: 'architects-daughter', Arial, sans-serif; color: #fff;}
 .home-text p { color: #fff; }
@@ -117,6 +122,9 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     footer p { font-size: 2vmax; }
     footer img { max-height: 10vmax; }
     footer .tetw { font-size: 2vmax; margin: 2vmax; }
+
+    .modal { padding-top: 10vmax; }
+    .lightbox { padding-top: 10vmax; }
 }
 
 /*//////////////////////////////////////////////////////////
@@ -145,6 +153,9 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     footer p { font-size: 1vmax; }
     footer img { max-height: 4vmax; }
     footer .tetw { font-size: 1vmax; margin: 1vmax; }
+
+    .modal { padding-top: 5vmax; }
+    .lightbox { padding-top: 2vmax; }
 }
 
 /*//////////////////////////////////////////////////////////
@@ -166,15 +177,17 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 #about img { cursor: pointer; transition: 0.3s; }
 #about img:hover { opacity: 0.7;}
+.img-col-1 { flex: 1; }
+.img-col-2 { flex: 0.768; }
+.img-col-3 { flex: 0.8; }
+
 #portfolio img { cursor: pointer; transition: 0.3s; }
 #portfolio img:hover { opacity: 0.7;}
 .row-of-img { display: flex;}
 .row-of-img > div:not(:last-child) { margin-right: 2%; }
-.img-col-1 { flex: 1; }
-.img-col-2 { flex: 0.768; }
-.img-col-3 { flex: 0.8; }
 .img-row-1-col-1 { flex: 0.75; }
 .img-row-1-col-2 { flex: 0.75; }
 .img-row-1-col-3 { flex: 0.75; }
@@ -184,6 +197,15 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 .img-row-3-col-1 { flex: 1.33; }
 .img-row-3-col-2 { flex: 0.75; }
 .img-row-3-col-3 { flex: 1.33; }
+.img-row-4-col-1 { flex: 0.75; }
+.img-row-4-col-2 { flex: 0.75; }
+.img-row-4-col-3 { flex: 0.75; }
+.img-row-5-col-1 { flex: 0.938; }
+.img-row-5-col-2 { flex: 1; }
+.img-row-5-col-3 { flex: 1; }
+.img-row-6-col-1 { flex: 0.75; }
+.img-row-6-col-2 { flex: 0.75; }
+.img-row-6-col-3 { flex: 0.75; }
 .scaled-img { max-width: 100%; height: auto; }
 
 /*//////////////////////////////////////////////////////////
@@ -194,7 +216,6 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     display: none;
     position: fixed;
     z-index: 9999;
-    padding-top: 100px;
     left: 0;
     top: 0;
     width: 100%;
@@ -218,7 +239,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #9c640c;
+    color: #fff;
     padding: 10px 0;
     height: 150px;
 }
@@ -257,6 +278,19 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 /*//////////////////////////////////////////////////////////
 // L I G H T B O X
 //////////////////////////////////////////////////////////*/
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
 
 .lightbox-content {
     position: relative;
