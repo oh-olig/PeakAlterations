@@ -15,16 +15,15 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: underline; }
 a:active { text-decoration: underline; }
 
-a, 
-p, 
-span { font-family: 'quicksand-regular', Verdana, serif; color: #000; }
+a, p, span { font-family: 'quicksand-regular', Verdana, serif; color: #000; }
 
-h1 { 
+h1, h2 { 
     font-family: 'vogue-regular', Verdana, serif;
     font-style: bold;
     color: #000;
     text-align: center;
 }
+h2 { margin-bottom: 0.5vmax; }
 
 .logo {
     margin: 2vh;
@@ -109,7 +108,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
         position: relative;
         text-align: center;
     }
-    h1 { font-size: 3vmax; }
+    h1, h2 { font-size: 3vmax; }
     a, p, span { font-size: 1.9vmax; }
 
     #contact-info div:first-of-type, #location div:first-of-type { padding-top: 1vmax; }
@@ -140,7 +139,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
     .home-text p { font-size: 1vmax; }
 
     .container { margin: 2vh auto; max-width: 70vw; }
-    h1 { font-size: 2.5vmax; }
+    h1, h2 { font-size: 2.5vmax; }
     a, p, span { font-size: 1vmax; }
 
     #contact-info div:first-of-type, #location div:first-of-type { padding-top: 1vmax; }
