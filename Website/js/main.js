@@ -4,13 +4,7 @@ $(document).ready(function () {
     // P A G E   N A V I G A T I O N
     ////////////////////////////////////////////////////////////
 
-    $("#content").load("content/home.html");
-
-    $(".navigation a, header img").on("click", function (e) {
-        var id = $(this).attr("id");
-        $("#content").load(id);
-        window.scroll(0, 0);
-    });
+    $("#modal").load("common/modal.html");
     
     ////////////////////////////////////////////////////////////
     // A N I M A T I O N

@@ -60,6 +60,7 @@ h2 { margin-bottom: 0.5vmax; }
 .opening-hours {
     font-family: 'quicksand-regular', Verdana, serif;
     color: #000;
+    font-size: 1vmax;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,7 +95,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 // L A Y O U T   M O B I L E   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1024px) {
 
     .logo { height: 20vmax; }
     .navigation a { width: 10vmax; }
@@ -130,7 +131,7 @@ footer a > img { margin-left: 10px; margin-right: 10px; }
 // L A Y O U T   P C   B R O W S E R
 //////////////////////////////////////////////////////////*/
 
-@media only screen and (min-width: 1301px) {
+@media only screen and (min-width: 1025px) {
 
     .logo { height: 15vmax; }
     .navigation a { width: 5vmax; }
