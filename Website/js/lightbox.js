@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////
 // L I G H T B O X
-//////////////////////////////////////////////////////////// 
+////////////////////////////////////////////////////////////
 
 function openLightbox() {
     document.getElementById("img-lightbox").style.display = "block";
@@ -20,7 +20,6 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("img-slides");
